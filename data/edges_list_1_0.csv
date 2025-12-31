@@ -1,0 +1,394 @@
+Source,Target,Weight
+Christian Lorentzen,Thomas J. Fan,11
+Andrew Knyazev,Guillaume Lemaitre,1
+EricEllwanger,Guillaume Lemaitre,3
+EricEllwanger,frellwan,8
+Guillaume Lemaitre,frellwan,3
+Ana Milanova,Thomas J. Fan,1
+Ana Milanova,milana2,1
+Thomas J. Fan,milana2,1
+Guillaume Lemaitre,Juan Martin Loyola,22
+Adrin Jalali,Christian Lorentzen,1
+Adrin Jalali,Guillaume Lemaitre,17
+Adrin Jalali,Nicolas Hug,1
+Adrin Jalali,Roman Yurchak,1
+Adrin Jalali,Thomas J. Fan,5
+Adrin Jalali,Tom Dupré la Tour,1
+Christian Lorentzen,Guillaume Lemaitre,2
+Christian Lorentzen,Nicolas Hug,1
+Christian Lorentzen,Roman Yurchak,3
+Christian Lorentzen,Tom Dupré la Tour,1
+Guillaume Lemaitre,Nicolas Hug,3
+Guillaume Lemaitre,Roman Yurchak,6
+Guillaume Lemaitre,Thomas J. Fan,27
+Guillaume Lemaitre,Tom Dupré la Tour,2
+Nicolas Hug,Roman Yurchak,1
+Nicolas Hug,Thomas J. Fan,5
+Nicolas Hug,Tom Dupré la Tour,2
+Roman Yurchak,Thomas J. Fan,8
+Roman Yurchak,Tom Dupré la Tour,1
+Thomas J. Fan,Tom Dupré la Tour,8
+Guillaume Lemaitre,J Alexander,1
+Guillaume Lemaitre,Johnathan Alexander,1
+J Alexander,Johnathan Alexander,2
+Guillaume Lemaitre,Olivier Grisel,35
+Guillaume Lemaitre,Reshama Shaikh,6
+Guillaume Lemaitre,TONY GEORGE,1
+Reshama Shaikh,TONY GEORGE,1
+Guillaume Lemaitre,Manimaran,1
+Guillaume Lemaitre,Shubhraneel Pal,1
+Guillaume Lemaitre,shubhraneel,1
+Olivier Grisel,Shubhraneel Pal,1
+Olivier Grisel,Thomas J. Fan,42
+Olivier Grisel,shubhraneel,1
+Shubhraneel Pal,Thomas J. Fan,1
+Shubhraneel Pal,shubhraneel,1
+Thomas J. Fan,shubhraneel,1
+Bharat Raghunathan,Guillaume Lemaitre,3
+Guillaume Lemaitre,baam,5
+Alexandre Gramfort,Guillaume Lemaitre,3
+Alexandre Gramfort,Julien Jerphanion,1
+Guillaume Lemaitre,Julien Jerphanion,14
+Olivier Grisel,baam,1
+András Simon,Guillaume Lemaitre,1
+András Simon,Olivier Grisel,1
+Guillaume Lemaitre,Jérémie du Boisberranger,8
+Jérémie du Boisberranger,Olivier Grisel,14
+Andreas Mueller,Christian Lorentzen,1
+Andreas Mueller,Olivier Grisel,2
+Andreas Mueller,Thomas J. Fan,1
+Christian Lorentzen,Olivier Grisel,10
+Olivier Grisel,Olivier Grisel,6
+Christian Lorentzen,jeremie du boisberranger,1
+Adrin Jalali,Olivier Grisel,5
+Julien Jerphanion,t-jakubek,1
+Guillaume Lemaitre,kxytim,1
+Ezri Mudde,Ezri-Mudde,1
+James Lamb,Tom Dupré la Tour,1
+Olivier Grisel,Tom Dupré la Tour,6
+Christopher Sobel,chrissobel,1
+Guillaume Lemaitre,genvalen,17
+Lucy Liu,Olivier Grisel,1
+Guillaume Lemaitre,Harutaka Kawamura,2
+Eduardo Jardim,Olivier Grisel,1
+Eduardo Jardim,Thomas J. Fan,1
+Prince Canuma,Tom Dupré la Tour,2
+Julien Jerphanion,Olivier Grisel,7
+Chiara Marmo,Guillaume Lemaitre,7
+Chiara Marmo,Julien Jerphanion,5
+Chiara Marmo,Mehdi Hamoumi,1
+Chiara Marmo,Thomas J. Fan,3
+Guillaume Lemaitre,Mehdi Hamoumi,1
+Julien Jerphanion,Mehdi Hamoumi,1
+Julien Jerphanion,Thomas J. Fan,9
+Mehdi Hamoumi,Thomas J. Fan,1
+Guillaume Lemaitre,Michael Sloma,1
+Guillaume Lemaitre,Shao Yang Hong,4
+Julien Jerphanion,Michael Sloma,1
+Julien Jerphanion,Shao Yang Hong,2
+Michael Sloma,Shao Yang Hong,1
+Michael Sloma,Thomas J. Fan,1
+Shao Yang Hong,Thomas J. Fan,2
+Christian Lorentzen,Julien Jerphanion,1
+Guillaume Lemaitre,Loïc Estève,2
+Loïc Estève,Olivier Grisel,2
+Loïc Estève,Thomas J. Fan,3
+Guillaume Lemaitre,Joan Massich,1
+Guillaume Lemaitre,Mathis Batoul,1
+Joan Massich,Julien Jerphanion,1
+Joan Massich,Mathis Batoul,1
+Joan Massich,Olivier Grisel,1
+Julien Jerphanion,Mathis Batoul,1
+Mathis Batoul,Olivier Grisel,1
+Guillaume Lemaitre,Ricardo Ferreira,1
+Ricardo Ferreira,Thomas J. Fan,1
+Guillaume Lemaitre,Oli.P,1
+Guillaume Lemaitre,Oliver Pfaffel,1
+Oli.P,Oliver Pfaffel,1
+Oli.P,Olivier Grisel,1
+Oliver Pfaffel,Olivier Grisel,1
+Guillaume Lemaitre,Joris Van den Bossche,1
+Joris Van den Bossche,Olivier Grisel,1
+Fenil Suchak,Roman Yurchak,1
+Fenil Suchak,Thomas J. Fan,1
+Frankie Robertson,Roman Yurchak,1
+Elliot Kang,Guillaume Lemaitre,1
+Elliot Kang,Shao Yang Hong,1
+Felix Hafner,Guillaume Lemaitre,1
+Chiara Marmo,Olivier Grisel,6
+Guillaume Lemaitre,Mitzi,2
+Guillaume Lemaitre,Shuhei Kayawari,1
+Guillaume Lemaitre,arka204,1
+Shuhei Kayawari,Thomas J. Fan,1
+Shuhei Kayawari,arka204,1
+Thomas J. Fan,arka204,1
+Guillaume Lemaitre,Jeff Zhao,1
+Jeff Zhao,Julien Jerphanion,1
+Gregory Strubel,Guillaume Lemaitre,1
+Gregory Strubel,Julien Jerphanion,1
+Gregory Strubel,gregorystrubel,1
+Guillaume Lemaitre,gregorystrubel,1
+Julien Jerphanion,gregorystrubel,1
+Guillaume Lemaitre,Mohamed Khoualed,1
+Chiara Marmo,Shyam Desai,1
+Guillaume Lemaitre,Shyam Desai,1
+Olivier Grisel,Shyam Desai,1
+Adrin Jalali,Felipe Bidu Rodrigues,1
+Felipe Bidu Rodrigues,Guillaume Lemaitre,2
+Guillaume Lemaitre,Michal Karbownik,1
+Thomas J. Fan,Tobias Uhmann,1
+Guillaume Lemaitre,LalliAcqua,1
+Guillaume Lemaitre,la530489,1
+LalliAcqua,la530489,1
+Olivier Grisel,Roman Yurchak,3
+Guillaume Lemaitre,Maxwell Liu,2
+Maxwell Liu,Thomas J. Fan,2
+Adrin Jalali,Maxwell Liu,1
+Guillaume Lemaitre,Kei Ishikawa,1
+Julien Jerphanion,Kei Ishikawa,1
+Nic Annau,Nic Annau,1
+Christian Lorentzen,Paweł Olszewski,1
+Chiara Marmo,Jérémie du Boisberranger,1
+Chiara Marmo,Roman Yurchak,1
+Chiara Marmo,Sean Benhur J,1
+Guillaume Lemaitre,Sean Benhur J,1
+Jérémie du Boisberranger,Roman Yurchak,3
+Jérémie du Boisberranger,Sean Benhur J,1
+Roman Yurchak,Sean Benhur J,1
+Divyanshu Deoli,Guillaume Lemaitre,1
+Guillaume Lemaitre,Hugo DEFOIS,1
+Guillaume Lemaitre,Hugo Defois,1
+Hugo DEFOIS,Hugo Defois,1
+Hugo DEFOIS,Olivier Grisel,1
+Hugo Defois,Olivier Grisel,1
+Frederick Robinson,Guillaume Lemaitre,1
+Guillaume Lemaitre,Malte Londschien,1
+Guillaume Lemaitre,José Manuel Nápoles Duarte,1
+Cristián Maureira-Fredes,Guillaume Lemaitre,1
+Cristián Maureira-Fredes,Thomas J. Fan,1
+Cristián Maureira-Fredes,Tomás Ronald Hughes,1
+Guillaume Lemaitre,Tomás Ronald Hughes,1
+Thomas J. Fan,Tomás Ronald Hughes,1
+Gabriel Stefanini Vicente,Guillaume Lemaitre,3
+Guillaume Lemaitre,JVM,1
+Guillaume Lemaitre,Joao Vitor Mascarenhas,1
+JVM,Joao Vitor Mascarenhas,1
+Guillaume Lemaitre,Leonardo Rocco,1
+Jérémie du Boisberranger,Tom Dupré la Tour,1
+Guillaume Lemaitre,Iván Pulido,2
+Adrin Jalali,genvalen,8
+Aline Ribeiro de Almeida,Olivier Grisel,2
+bumblebebee211196,bumblebee,1
+Mitzi,Olivier Grisel,1
+Aline Ribeiro de Almeida,Guillaume Lemaitre,1
+Guillaume Lemaitre,Patric Lacouth,1
+Guillaume Lemaitre,Jesse Lima,2
+Glòria Macià Muñoz,Guillaume Lemaitre,2
+Guillaume Lemaitre,caherrera-meli,1
+Guillaume Lemaitre,Jennifer Maldonado,2
+Toshihiro NAKAE,Toshihiro Nakae,1
+Olivier Grisel,genvalen,2
+Thomas J. Fan,genvalen,1
+Guillaume Lemaitre,Lucy Jiménez,1
+Lucy Jiménez,Olivier Grisel,1
+Gabriel Stefanini Vicente,Olivier Grisel,1
+Jesse Lima,Olivier Grisel,1
+Gabriel Stefanini Vicente,Roman Yurchak,2
+Gabriel Stefanini Vicente,Thomas J. Fan,1
+Julio Batista Silva,Olivier Grisel,1
+Mateo Noreña,Roman Yurchak,1
+Glen,Sofía Denner,1
+Guillaume Lemaitre,Luccas Quadros,2
+Guillaume Lemaitre,marielaraj,1
+Guillaume Lemaitre,Pablo Ibieta-Jimenez,1
+Guillaume Lemaitre,Nico Stefani,2
+Nico Stefani,Nico Stefani,1
+Guillaume Lemaitre,Sebastian Flores,1
+Felipe Bidu Rodrigues,Iván Pulido,1
+Pablo Ibieta-Jimenez,Thomas J. Fan,1
+Alexandre Gramfort,Maria Telenczuk,6
+Guillaume Lemaitre,Tomás Moreyra,1
+Alexandre Gramfort,Christian Lorentzen,2
+Alexandre Gramfort,Thomas J. Fan,1
+Olivier Grisel,Uttam kumar,1
+Chiara Marmo,Ian,1
+Guillaume Lemaitre,Ian,1
+Ian,Julien Jerphanion,1
+Roman Yurchak,lacrosse91,1
+Bharat Raghunathan,Thomas J. Fan,1
+Benedikt Boecking,Chiara Marmo,1
+LSturtew,jeremie du boisberranger,1
+Alexandre Gramfort,Olivier Grisel,4
+Chiara Marmo,Shao Yang Hong,1
+Malte Londschien,Olivier Grisel,2
+Alihan Zihna,Brian Sun,1
+Alihan Zihna,Chiara Marmo,1
+Alihan Zihna,Christian Lorentzen,2
+Alihan Zihna,Olivier Grisel,2
+Alihan Zihna,Thomas J. Fan,2
+Alihan Zihna,Venkatachalam N,1
+Alihan Zihna,naozin555,1
+Brian Sun,Chiara Marmo,1
+Brian Sun,Christian Lorentzen,1
+Brian Sun,Olivier Grisel,1
+Brian Sun,Thomas J. Fan,1
+Brian Sun,Venkatachalam N,1
+Brian Sun,naozin555,1
+Chiara Marmo,Christian Lorentzen,2
+Chiara Marmo,Venkatachalam N,1
+Chiara Marmo,naozin555,1
+Christian Lorentzen,Venkatachalam N,1
+Christian Lorentzen,naozin555,1
+Olivier Grisel,Venkatachalam N,1
+Olivier Grisel,naozin555,1
+Thomas J. Fan,Venkatachalam N,1
+Thomas J. Fan,naozin555,1
+Venkatachalam N,naozin555,1
+Olivier Grisel,murata-yu,1
+Thomas J. Fan,murata-yu,1
+Alihan Zihna,Maria Telenczuk,1
+Whidou,Whidou,1
+Guillaume Lemaitre,michalkrawczyk,1
+Jan Niklas Böhm,Olivier Grisel,1
+Jan Niklas Böhm,Thomas J. Fan,1
+Jan Niklas Böhm,jnboehm,1
+Olivier Grisel,jnboehm,1
+Thomas J. Fan,jnboehm,1
+Olivier Grisel,kobaski,1
+Christian Lorentzen,David Dale,1
+Guillaume Lemaitre,tom1092,1
+Thomas J. Fan,ZeyuSun,1
+Chiara Marmo,Nicolas Hug,3
+Guillaume Lemaitre,kmatt10,1
+Thomas J. Fan,kmatt10,1
+Guillaume Lemaitre,Haoyin Xu,1
+Julien Jerphanion,Nicolas Hug,2
+Guillaume Lemaitre,Sylvain Marié,1
+Julien Jerphanion,Sylvain Marié,1
+Joel Nothman,Nicolas Hug,2
+Joel Nothman,Olivier Grisel,2
+Joel Nothman,Sylvain MARIE,1
+Joel Nothman,Sylvain Marié,1
+Joel Nothman,Thomas J. Fan,1
+Joel Nothman,Tom Dupré la Tour,1
+Nicolas Hug,Olivier Grisel,4
+Nicolas Hug,Sylvain MARIE,1
+Nicolas Hug,Sylvain Marié,1
+Olivier Grisel,Sylvain MARIE,2
+Olivier Grisel,Sylvain Marié,2
+Sylvain MARIE,Sylvain Marié,1
+Sylvain MARIE,Thomas J. Fan,1
+Sylvain MARIE,Tom Dupré la Tour,1
+Sylvain Marié,Thomas J. Fan,1
+Sylvain Marié,Tom Dupré la Tour,1
+Ray Bell,Ray Bell,1
+Dmitry Kobak,Tom Dupré la Tour,1
+Andrew Delong,Guillaume Lemaitre,1
+Alexandr Fonari,Chiara Marmo,1
+Alexandr Fonari,Guillaume Lemaitre,1
+Alexandr Fonari,Sasha Fonari,1
+Chiara Marmo,Sasha Fonari,1
+Guillaume Lemaitre,Sasha Fonari,1
+Chiara Marmo,Dmytro S Lituiev,1
+Dmytro S Lituiev,Guillaume Lemaitre,1
+Dmytro S Lituiev,Julien Jerphanion,1
+Dmytro S Lituiev,Olivier Grisel,1
+Kei Ishikawa,Olivier Grisel,1
+Julien Jerphanion,Roman Yurchak,2
+Isaack Mungui,Thomas J. Fan,1
+Christopher Yeh,Thomas J. Fan,1
+Nicolas Hug,Shawn,1
+Nicolas Hug,xiaoyuchai,1
+Shawn,xiaoyuchai,1
+Guillaume Lemaitre,Oras Phongpanangam,1
+Abdulelah S. Al Mesfer,Chiara Marmo,1
+Abdulelah S. Al Mesfer,Guillaume Lemaitre,1
+Abdulelah S. Al Mesfer,Olivier Grisel,2
+Shooter23,Thomas J. Fan,1
+Thomas J. Fan,qdeffense,1
+Albert Villanova del Moral,Alonso Silva Allende,2
+Albert Villanova del Moral,Roman Yurchak,1
+Alonso Silva Allende,Roman Yurchak,1
+Julien Jerphanion,jiefangxuanyan,1
+Thomas J. Fan,jiefangxuanyan,1
+Maria Telenczuk,Olivier Grisel,3
+Joel Nothman,Luca Bittarello,1
+Luca Bittarello,Nicolas Hug,1
+Thomas J. Fan,makoeppel,1
+James Budarz,James Budarz,1
+Albert Thomas,Olivier Grisel,2
+Albert Thomas,Tom Dupré la Tour,1
+Leandro Hermida,Rodion Martynov,1
+Leandro Hermida,marrodion,1
+Rodion Martynov,marrodion,1
+Joris Clement,flyingdutchman23,1
+Avi Gupta,Roman Yurchak,1
+Christian Lorentzen,Malte Londschien,1
+Thomas J. Fan,Vilém Zouhar,1
+Thomas J. Fan,cinbez,1
+Thomas J. Fan,cliffordEmmanuel,1
+cinbez,cliffordEmmanuel,1
+Olivier Grisel,PierreAttard,1
+Guillaume Lemaitre,Jon Crall,1
+Alek Lefebvre,Olivier Grisel,1
+Cycks,Mohamed Haseeb,2
+Samuel Brice,Samuel Brice,1
+Olivier Grisel,Steven Kolawole,2
+Chiara Marmo,Joel Nothman,1
+Guillaume Lemaitre,Maria Telenczuk,2
+Haidar Almubarak,Olivier Grisel,1
+Haidar Almubarak,SteveKola,1
+Olivier Grisel,SteveKola,1
+Christian Lorentzen,xavier dupré,1
+Olivier Grisel,xavier dupré,1
+Juan Carlos Alfaro Jiménez,Nicolas Hug,1
+Atsushi Nukariya,Olivier Grisel,1
+Albert Thomas,Roman Yurchak,1
+Atsushi Nukariya,Julien Jerphanion,1
+Atsushi Nukariya,Jérémie du Boisberranger,1
+Atsushi Nukariya,Roman Yurchak,1
+Julien Jerphanion,Jérémie du Boisberranger,1
+Guillaume Lemaitre,Hassan Alsawadi,1
+Guillaume Lemaitre,feras-oughali,1
+Guillaume Lemaitre,hassanalsawadi,1
+Hassan Alsawadi,feras-oughali,1
+Hassan Alsawadi,hassanalsawadi,1
+feras-oughali,hassanalsawadi,1
+Guillaume Lemaitre,Shivam,1
+Guillaume Lemaitre,shivamgargsya,1
+Shivam,shivamgargsya,1
+Atsushi Nukariya,Guillaume Lemaitre,1
+Guillaume Lemaitre,simonamaggio,1
+Olivier Grisel,simonamaggio,1
+baam333,putschblos,1
+Guillaume Lemaitre,Vadim Ushtanit,1
+Guillaume Lemaitre,vadim-ushtanit,1
+Nicolas Hug,Vadim Ushtanit,1
+Nicolas Hug,vadim-ushtanit,1
+Vadim Ushtanit,vadim-ushtanit,1
+CeeThinwa,Christian Lorentzen,1
+Alihan Zihna,Guillaume Lemaitre,1
+Muhammad Jarir Kanji,Olivier Grisel,1
+Amanda Dsouza,Thomas J. Fan,1
+Jérémie du Boisberranger,bmalezieux,1
+Roman Yurchak,bmalezieux,1
+BaptBillard,Jérémie du Boisberranger,1
+Thomas J. Fan,ZhaoweiWang,1
+EdwinWenink,Nicolas Hug,1
+Erich Schubert,Olivier Grisel,1
+Eric Fiegel,Guillaume Lemaitre,1
+Guillaume Lemaitre,Juan Carlos Alfaro Jiménez,1
+David Poznik,Guillaume Lemaitre,1
+Adrin Jalali,Jérémie du Boisberranger,1
+Alexandre Gramfort,Nicolas Hug,1
+Maria Telenczuk,Nicolas Hug,1
+Nicolas Hug,Surya Prakash,1
+Nicolas Hug,prakashsur,1
+Surya Prakash,prakashsur,1
+Nicolas Hug,ranjanikrishnan,1
+Jérémie du Boisberranger,amzliun,1
+Jérémie du Boisberranger,ly648499246,1
+amzliun,ly648499246,1
+Guillaume Lemaitre,Miao Cai,1
+Kunj,Thomas J. Fan,1
+Jérémie du Boisberranger,Shao Yang Hong,1

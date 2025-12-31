@@ -1,0 +1,249 @@
+Source,Target,Weight
+Anne Beyer,Olivier Grisel,1
+Christian Lorentzen,Jérémie du Boisberranger,5
+Christian Lorentzen,Loïc Estève,5
+Christian Lorentzen,Olivier Grisel,4
+Christian Lorentzen,Omar Salman,1
+Christian Lorentzen,Tim Head,1
+Christian Lorentzen,Virgil Chan,3
+Jérémie du Boisberranger,Loïc Estève,7
+Jérémie du Boisberranger,Olivier Grisel,5
+Jérémie du Boisberranger,Omar Salman,1
+Jérémie du Boisberranger,Tim Head,4
+Jérémie du Boisberranger,Virgil Chan,2
+Loïc Estève,Olivier Grisel,12
+Loïc Estève,Omar Salman,4
+Loïc Estève,Tim Head,5
+Loïc Estève,Virgil Chan,3
+Olivier Grisel,Omar Salman,10
+Olivier Grisel,Tim Head,6
+Olivier Grisel,Virgil Chan,4
+Omar Salman,Tim Head,1
+Omar Salman,Virgil Chan,2
+Tim Head,Virgil Chan,2
+Arthur Lacote,Loïc Estève,3
+Arthur Lacote,Olivier Grisel,3
+Arthur Lacote,antoinebaker,1
+Loïc Estève,antoinebaker,1
+Olivier Grisel,antoinebaker,2
+François Paugam,Loïc Estève,4
+Loïc Estève,Stefanie Senger,7
+Anne Beyer,Lucy Liu,2
+Anne Beyer,Tim Head,1
+Lucy Liu,Tim Head,3
+Stefanie Senger,Virgil Chan,4
+Maren Westermann,Olivier Grisel,1
+Maren Westermann,Virgil Chan,1
+Maren Westermann,Vivaan Nanavati,4
+Olivier Grisel,Vivaan Nanavati,2
+Virgil Chan,Vivaan Nanavati,2
+Vivaan Nanavati,Vivaan Nanavati,2
+Gaetan,Loïc Estève,1
+Sota Goto,Tim Head,1
+Loïc Estève,Lucy Liu,5
+Lucy Liu,Stefanie Senger,4
+ArturoAmorQ,Faizan-Ul Huda,1
+Arturo Amor,ArturoAmorQ,7
+Stefanie Senger,Tim Head,3
+Lucy Liu,Olivier Grisel,7
+Anne Beyer,Loïc Estève,1
+Adam Li,Arthur Lacote,1
+Adam Li,Jérémie du Boisberranger,1
+Adam Li,Olivier Grisel,1
+Adam Li,Tim Head,1
+Arthur Lacote,Jérémie du Boisberranger,1
+Arthur Lacote,Tim Head,1
+Josef Affourtit,Omar Salman,1
+Shruti Nath,antoinebaker,1
+François Goupil,François Goupil,1
+François Goupil,Loïc Estève,2
+François Goupil,Lucy Liu,2
+François Goupil,Tim Head,2
+Adrin Jalali,Dmitry Kobak,1
+Adrin Jalali,antoinebaker,2
+Dmitry Kobak,antoinebaker,1
+Daniel Herrera-Esposito,Shruti Nath,1
+Adrin Jalali,Guillaume Lemaitre,3
+Adrin Jalali,Jérémie du Boisberranger,3
+Adrin Jalali,Lucy Liu,2
+Adrin Jalali,Success Moses,1
+Guillaume Lemaitre,Jérémie du Boisberranger,4
+Guillaume Lemaitre,Lucy Liu,1
+Guillaume Lemaitre,Success Moses,1
+Jérémie du Boisberranger,Lucy Liu,4
+Jérémie du Boisberranger,Success Moses,1
+Lucy Liu,Success Moses,1
+Arturo Amor,Christine P. Chai,1
+Jérémie du Boisberranger,Matt J.,1
+Dea María Léon,Loïc Estève,2
+Daniel Herrera-Esposito,Olivier Grisel,1
+Arthur Lacote,Lucy Liu,1
+Josef Affourtit,Lucy Liu,1
+Gael Varoquaux,Lucy Liu,1
+Gael Varoquaux,Olivier Grisel,1
+Gael Varoquaux,Stefanie Senger,1
+Olivier Grisel,Stefanie Senger,4
+Lucy Liu,Omar Salman,2
+Lucy Liu,pfolch,1
+Olivier Grisel,pfolch,1
+Anne Beyer,Stefanie Senger,1
+Loïc Estève,Mahi Dhiman,1
+Mahi Dhiman,Olivier Grisel,1
+Loïc Estève,Thomas S.,1
+Guillaume Lemaitre,Loïc Estève,2
+Zubair Shakoor,Zubair Shakoor,1
+Kenneth Enevoldsen,Loïc Estève,1
+Jérôme Dockès,Olivier Grisel,1
+Jérôme Dockès,Omar Salman,1
+Loïc Estève,Marco Edward Gorelli,1
+Emily (Xinyi) Chen,Loïc Estève,1
+François Paugam,Jérémie du Boisberranger,4
+Jérémie du Boisberranger,ph-ll-pp,1
+Adrin Jalali,Marc Bresson,1
+Dan Schult,antoinebaker,1
+Adrin Jalali,Anthony Gitter,1
+Adrin Jalali,ThibaultDECO,1
+Jérémie du Boisberranger,ThibaultDECO,1
+Christian Stec,cstec,1
+Arturo Amor,Stefanie Senger,3
+Arturo Amor,Virgil Chan,3
+ArturoAmorQ,Stefanie Senger,2
+ArturoAmorQ,Virgil Chan,2
+Stefanie Senger,Stefanie Senger,2
+Adrin Jalali,Omar Salman,2
+Adrin Jalali,kostayScr,1
+Guillaume Lemaitre,Omar Salman,1
+Guillaume Lemaitre,antoinebaker,1
+Guillaume Lemaitre,kostayScr,1
+Omar Salman,antoinebaker,1
+Omar Salman,kostayScr,1
+antoinebaker,kostayScr,1
+Jérémie du Boisberranger,xuzhang0327,1
+Arthur Lacote,Sercan Turkmen,1
+Loïc Estève,Sercan Turkmen,1
+Lucy Liu,Tiziano Zito,1
+Loïc Estève,Thomas J. Fan,2
+Thomas J. Fan,Virgil Chan,2
+Adrin Jalali,Reshama Shaikh,1
+Adrin Jalali,Yao Xiao,1
+Reshama Shaikh,Yao Xiao,1
+Adrin Jalali,Christian Veenhuis,1
+Adrin Jalali,VirenPassi,2
+Arturo Amor,Lucy Liu,2
+ArturoAmorQ,Lucy Liu,2
+AnthonyPrudent,Maren Westermann,1
+Christine P. Chai,Jérémie du Boisberranger,1
+Adam J. Stewart,Jérémie du Boisberranger,1
+Casey Heath,Maren Westermann,1
+Jérémie du Boisberranger,Ravichandranayakar,1
+GaetandeCast,Jérémie du Boisberranger,1
+Jérémie du Boisberranger,Sarthak Puri,1
+Maurya Ghogare,Rishi Prasad,1
+Maurya Ghogare,RishiP2006,1
+Maurya Ghogare,Stefanie Senger,2
+Rishi Prasad,RishiP2006,1
+Rishi Prasad,Stefanie Senger,2
+RishiP2006,Stefanie Senger,2
+Maren Westermann,Spencer Bradkin,1
+Maren Westermann,Stefanie Senger,2
+Spencer Bradkin,Stefanie Senger,1
+Adrin Jalali,Mamduh Zabidi,1
+Adrin Jalali,Maren Westermann,1
+Mamduh Zabidi,Maren Westermann,1
+François Paugam,Olivier Grisel,1
+Gesa Loof,Maren Westermann,1
+Gesa Loof,Stefanie Senger,1
+Adrin Jalali,Stefanie Senger,5
+Omar Salman,Stefanie Senger,2
+Devansh Baghla,Jérémie du Boisberranger,1
+Devansh Baghla,dbXD320,1
+Jérémie du Boisberranger,dbXD320,1
+Roberto Mourao,rnmourao,2
+Dea María Léon,Guillaume Lemaitre,1
+Dea María Léon,Jérémie du Boisberranger,1
+Adrin Jalali,Loïc Estève,1
+Adrin Jalali,Tim Head,2
+Arturo Amor,Thomas J. Fan,1
+ArturoAmorQ,Thomas J. Fan,1
+Alexander Fabisch,Charles Hill,1
+Alexander Fabisch,Edoardo Abati,1
+Alexander Fabisch,Loïc Estève,1
+Alexander Fabisch,Olivier Grisel,1
+Alexander Fabisch,Omar Salman,1
+Charles Hill,Edoardo Abati,1
+Charles Hill,Loïc Estève,1
+Charles Hill,Olivier Grisel,1
+Charles Hill,Omar Salman,1
+Edoardo Abati,Loïc Estève,1
+Edoardo Abati,Olivier Grisel,1
+Edoardo Abati,Omar Salman,1
+Junaid,Loïc Estève,1
+John Hendricks,Miguel Parece,1
+Alexandre Abraham,Jérémie du Boisberranger,1
+Alexandre Abraham,Tim Head,1
+Maitrey Talware,Work,1
+Adrin Jalali,Kapil Parekh,1
+Arturo Amor,Christian Lorentzen,1
+ArturoAmorQ,Christian Lorentzen,1
+Patrick Walsh,Stefanie Senger,1
+Adrin Jalali,Arturo Amor,1
+Adrin Jalali,Olivier Grisel,2
+Arturo Amor,Olivier Grisel,2
+Arturo Amor,Tim Head,2
+Jérémie du Boisberranger,hakan çanakçı,1
+Jérémie du Boisberranger,Veghit,1
+Loïc Estève,Yaroslav Halchenko,1
+Jérémie du Boisberranger,kryggird,1
+Jérémie du Boisberranger,Lakshmi Krishnan,1
+Jérémie du Boisberranger,Luis,1
+Ian Faust,Jérémie du Boisberranger,1
+Gleb Levitski,Jérémie du Boisberranger,1
+Jérémie du Boisberranger,Stefanie Senger,1
+NotAceNinja,Ved Thorat,1
+Jérémie du Boisberranger,S. M. Mohiuddin Khan Shiam,1
+Thomas J. Fan,elenafillo,1
+Jérémie du Boisberranger,VirenPassi,1
+Jérémie du Boisberranger,L G Nithish Reddy,1
+Jérémie du Boisberranger,nithish-74,1
+L G Nithish Reddy,nithish-74,1
+Jérémie du Boisberranger,Krishnan Vignesh,2
+Krishnan Vignesh,Krishnan Vignesh,1
+Joris Van den Bossche,Jérémie du Boisberranger,1
+Joris Van den Bossche,Tim Head,1
+Gonçalo Guiomar,Jérémie du Boisberranger,1
+Marie Sacksick,Stefanie Senger,1
+Jérémie du Boisberranger,jshn9515,1
+Jérémie du Boisberranger,saskra,1
+Lucy Liu,saskra,1
+Jérémie du Boisberranger,Nicolas Bolle,1
+$id,Jérémie du Boisberranger,1
+Jérémie du Boisberranger,Michael Šimáček,1
+Jérémie du Boisberranger,Roshangoli,1
+Jsy,SiyuJin-1,1
+Jsy,Stefanie Senger,1
+SiyuJin-1,Stefanie Senger,1
+Deepyaman Datta,Jérémie du Boisberranger,1
+Jérémie du Boisberranger,Rafael Ayllón Gavilán,1
+Loïc Estève,Rafael Ayllón Gavilán,1
+Evgeni Burovski,Jérémie du Boisberranger,1
+Jérémie du Boisberranger,Sylvain Combettes,1
+Christian Lorentzen,Stefanie Senger,1
+Lucy Liu,Thomas J. Fan,1
+Emily (Xinyi) Chen,Lucy Liu,1
+Emily (Xinyi) Chen,Olivier Grisel,1
+Adrin Jalali,Marija Vlajic,1
+Guillaume Lemaitre,Marija Vlajic,1
+Guillaume Lemaitre,Olivier Grisel,1
+Marija Vlajic,Olivier Grisel,1
+Loïc Estève,Thomas Li,1
+Olivier Grisel,Thomas Li,1
+Omar Salman,Thomas Li,1
+Virgil Chan,sisird864,1
+Natalia Mokeeva,Stefanie Senger,1
+Adrin Jalali,Natalia Mokeeva,1
+Jérémie du Boisberranger,antoinebaker,1
+Arturo Amor,Ayrat,1
+Ayrat,Olivier Grisel,1
+Ayrat,Tim Head,1
+Ayrat,Virgil Chan,1
+Adrin Jalali,Virgil Chan,1

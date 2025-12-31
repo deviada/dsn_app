@@ -1,0 +1,222 @@
+Source,Target,Weight
+Jérémie du Boisberranger,Olivier Grisel,7
+Adrin Jalali,Guillaume Lemaitre,16
+Adrin Jalali,Thomas J. Fan,7
+Adrin Jalali,Yao Xiao,1
+Guillaume Lemaitre,Thomas J. Fan,5
+Guillaume Lemaitre,Yao Xiao,4
+Thomas J. Fan,Yao Xiao,3
+Christian Lorentzen,Guillaume Lemaitre,7
+Christian Lorentzen,Jérémie du Boisberranger,4
+Christian Lorentzen,Tim Head,4
+Guillaume Lemaitre,Jérémie du Boisberranger,8
+Guillaume Lemaitre,Tim Head,5
+Jérémie du Boisberranger,Tim Head,1
+Johann,jpienaar-tuks,1
+Akihiro Kuno,Jérémie du Boisberranger,1
+Akihiro Kuno,Olivier Grisel,1
+Adrin Jalali,raisadz,1
+Olivier Grisel,Omar Salman,2
+Adrin Jalali,Olivier Grisel,6
+Loïc Estève,Tim Head,5
+Christian Lorentzen,Olivier Grisel,10
+Adrin Jalali,Omar Salman,4
+Adrin Jalali,Stefanie Senger,8
+Omar Salman,Stefanie Senger,2
+Conrad,Conrad Stevens,1
+Adrin Jalali,Arturo Amor,3
+Tuhin Sharma,bivav,1
+Adrin Jalali,Andreas Mueller,1
+Adrin Jalali,Christian Lorentzen,2
+Adrin Jalali,Joel Nothman,2
+Adrin Jalali,Jérémie du Boisberranger,2
+Adrin Jalali,Soledad Galli,1
+Andreas Mueller,Arturo Amor,1
+Andreas Mueller,Christian Lorentzen,1
+Andreas Mueller,Guillaume Lemaitre,1
+Andreas Mueller,Joel Nothman,1
+Andreas Mueller,Jérémie du Boisberranger,1
+Andreas Mueller,Olivier Grisel,1
+Andreas Mueller,Omar Salman,1
+Andreas Mueller,Soledad Galli,1
+Andreas Mueller,Thomas J. Fan,1
+Arturo Amor,Christian Lorentzen,4
+Arturo Amor,Guillaume Lemaitre,3
+Arturo Amor,Joel Nothman,1
+Arturo Amor,Jérémie du Boisberranger,1
+Arturo Amor,Olivier Grisel,5
+Arturo Amor,Omar Salman,1
+Arturo Amor,Soledad Galli,1
+Arturo Amor,Thomas J. Fan,1
+Christian Lorentzen,Joel Nothman,1
+Christian Lorentzen,Omar Salman,1
+Christian Lorentzen,Soledad Galli,1
+Christian Lorentzen,Thomas J. Fan,2
+Guillaume Lemaitre,Joel Nothman,1
+Guillaume Lemaitre,Olivier Grisel,11
+Guillaume Lemaitre,Omar Salman,1
+Guillaume Lemaitre,Soledad Galli,1
+Joel Nothman,Jérémie du Boisberranger,1
+Joel Nothman,Olivier Grisel,1
+Joel Nothman,Omar Salman,1
+Joel Nothman,Soledad Galli,1
+Joel Nothman,Thomas J. Fan,1
+Jérémie du Boisberranger,Omar Salman,1
+Jérémie du Boisberranger,Soledad Galli,1
+Jérémie du Boisberranger,Thomas J. Fan,2
+Olivier Grisel,Soledad Galli,1
+Olivier Grisel,Thomas J. Fan,3
+Omar Salman,Soledad Galli,1
+Omar Salman,Thomas J. Fan,2
+Soledad Galli,Thomas J. Fan,1
+Olivier Grisel,Xiao Yuan,1
+Lucy Liu,jeremiedbb,1
+Adrin Jalali,Gael Varoquaux,1
+Gael Varoquaux,Jérémie du Boisberranger,1
+Guillaume Lemaitre,Stefanie Senger,5
+Jérémie du Boisberranger,Will Dean,1
+Adrin Jalali,Tuhin Sharma,1
+Eric Lindgren,Franck Charras,2
+Eric Lindgren,Guillaume Lemaitre,2
+Eric Lindgren,Julien Jerphanion,2
+Eric Lindgren,Loïc Estève,2
+Eric Lindgren,Oleksii Kachaiev,2
+Eric Lindgren,Olivier Grisel,2
+Eric Lindgren,Tim Head,2
+Franck Charras,Guillaume Lemaitre,2
+Franck Charras,Julien Jerphanion,2
+Franck Charras,Loïc Estève,2
+Franck Charras,Oleksii Kachaiev,2
+Franck Charras,Olivier Grisel,2
+Franck Charras,Tim Head,2
+Guillaume Lemaitre,Julien Jerphanion,4
+Guillaume Lemaitre,Loïc Estève,10
+Guillaume Lemaitre,Oleksii Kachaiev,2
+Julien Jerphanion,Loïc Estève,3
+Julien Jerphanion,Oleksii Kachaiev,2
+Julien Jerphanion,Olivier Grisel,3
+Julien Jerphanion,Tim Head,2
+Loïc Estève,Oleksii Kachaiev,2
+Loïc Estève,Olivier Grisel,9
+Oleksii Kachaiev,Olivier Grisel,2
+Oleksii Kachaiev,Tim Head,2
+Olivier Grisel,Tim Head,8
+Guillaume Lemaitre,Jérôme Dockès,1
+Guillaume Lemaitre,jeremiedbb,4
+Jérôme Dockès,jeremiedbb,1
+Gyeongjae Choi,Olivier Grisel,1
+Adrin Jalali,Rahil Parikh,1
+Arturo Amor,Rahil Parikh,1
+Adrin Jalali,Randolf Scholz,1
+Adrin Jalali,jeremiedbb,2
+Randolf Scholz,jeremiedbb,1
+jeremiedbb,myenugula,1
+Duarte São José,Jérémie du Boisberranger,1
+Adrin Jalali,Kaushik Amar Das,1
+Guillaume Lemaitre,Kaushik Amar Das,1
+Adrin Jalali,Hong Xiang Yue,1
+Hong Xiang Yue,Joel Nothman,1
+Arturo Amor,Marija Vlajic,1
+Arturo Amor,Tim Head,2
+Guillaume Lemaitre,Marija Vlajic,1
+Marija Vlajic,Olivier Grisel,1
+Marija Vlajic,Tim Head,1
+Adam Li,Guillaume Lemaitre,4
+Guillaume Lemaitre,Patrick Wang,1
+Guillaume Lemaitre,jeremie du boisberranger,1
+Patrick Wang,jeremie du boisberranger,1
+Arturo Amor,ArturoAmorQ,4
+ArturoAmorQ,Christian Lorentzen,2
+ArturoAmorQ,Olivier Grisel,2
+Loïc Estève,miguelcsilva,1
+Jérémie du Boisberranger,Xuefeng Xu,1
+Jérémie du Boisberranger,miguelcsilva,1
+Loïc Estève,jeremie du boisberranger,1
+Olivier Grisel,jeremie du boisberranger,1
+Jérémie du Boisberranger,Naziya Mahimkar,1
+Olivier Grisel,miguelcsilva,1
+Adrin Jalali,Julian Libiseller-Egger,2
+Guillaume Lemaitre,Julian Libiseller-Egger,2
+Julian Libiseller-Egger,Julian Libiseller-Egger,1
+Julian Libiseller-Egger,jeremiedbb,2
+Adrin Jalali,Ralf Gommers,1
+Adrin Jalali,Tim Head,1
+Olivier Grisel,Ralf Gommers,1
+Ralf Gommers,Tim Head,1
+Guillaume Lemaitre,jpienaar-tuks,1
+Adam Li,Thomas J. Fan,2
+Adam Li,Yao Xiao,1
+Guillaume Lemaitre,lihaitao,1
+Guillaume Lemaitre,Krsto Proroković,2
+Krsto Proroković,Krsto Proroković,1
+Krsto Proroković,jeremiedbb,2
+Reshama Shaikh,Ricardo,1
+Guillaume Lemaitre,Ralph Urlus,1
+Ralph Urlus,jeremiedbb,1
+Jérémie du Boisberranger,Loïc Estève,3
+Jack Bowyer,Loïc Estève,1
+ArturoAmorQ,Tim Head,1
+Guillaume Lemaitre,Vineet Joshi,1
+Loïc Estève,Marco Edward Gorelli,1
+Adrin Jalali,Loïc Estève,5
+Cemlyn,Cemlyn Coirier-Roberts,1
+Cemlyn,Guillaume Lemaitre,1
+Cemlyn Coirier-Roberts,Guillaume Lemaitre,1
+Guillaume Lemaitre,Johanna Bayer,1
+Guillaume Lemaitre,Michael Higgins,17
+Dipan Banik,Guillaume Lemaitre,1
+Guillaume Lemaitre,Thanh Lam DANG,3
+Arturo Amor,Xavier Beltran,1
+Yao Xiao,jeremie du boisberranger,1
+crispinlogan,jeremie du boisberranger,2
+SarahRemus,ge72mum,1
+SarahRemus,jeremie du boisberranger,1
+ge72mum,jeremie du boisberranger,1
+Arturo Amor,Gael Varoquaux,2
+ArturoAmorQ,Gael Varoquaux,1
+Filip Karlo Došilović,Loïc Estève,1
+Filip Karlo Došilović,Thomas J. Fan,1
+Loïc Estève,Thomas J. Fan,2
+Olivier Grisel,Thanh Lam DANG,1
+Olivier Grisel,Yao Xiao,1
+Thanh Lam DANG,Yao Xiao,1
+Stefanie Senger,Thomas J. Fan,1
+Christian Lorentzen,Gael Varoquaux,1
+Gael Varoquaux,Olivier Grisel,1
+ArturoAmorQ,Guillaume Lemaitre,1
+Guillaume Lemaitre,Suha Siddiqui,1
+Adam Li,Adrin Jalali,1
+Jiawei Zhang,Thomas J. Fan,1
+Omar Salman,Tim Head,1
+Stefanie Senger,Tim Head,1
+Guillaume Lemaitre,LeoGrin,1
+LeoGrin,Loïc Estève,1
+Adam Li,Loïc Estève,1
+Christian Veenhuis,Guillaume Lemaitre,1
+Bruno,Guillaume Lemaitre,1
+Eddie Bergman,Guillaume Lemaitre,1
+Ana Paula Gomes,Thomas J. Fan,1
+Adrin Jalali,John Hopfensperger,1
+Adrin Jalali,s-banach,1
+John Hopfensperger,Thomas J. Fan,1
+John Hopfensperger,s-banach,1
+Thomas J. Fan,s-banach,1
+Adrin Jalali,Michael Mayer,1
+Guillaume Lemaitre,Michael Mayer,1
+Adrin Jalali,Marco Edward Gorelli,1
+Guillaume Lemaitre,Xiao Yuan,1
+Egehan Gunduz,Guillaume Lemaitre,2
+Guillaume Lemaitre,VarunChaduvula,1
+Guillaume Lemaitre,sperret6,1
+Guillaume Lemaitre,Xavier Beltran,3
+jpcars,jpcars,1
+Adrin Jalali,Julien Jerphanion,1
+Guillaume Lemaitre,Higgs32584,5
+Higgs32584,Michael Higgins,6
+Adam Li,Julien Jerphanion,1
+Guillaume Lemaitre,Rodrigo Romero,2
+Guillaume Lemaitre,Manuel Labbé,1
+Guillaume Lemaitre,manasimj,1
+Guillaume Lemaitre,Shubham,1
+Anderson Nelson,Guillaume Lemaitre,1
+101AlexMartin,Alejandro Martin,1

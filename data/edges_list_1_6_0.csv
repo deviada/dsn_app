@@ -1,0 +1,205 @@
+Source,Target,Weight
+Stefanie Senger,Xiao Yuan,1
+Stefanie Senger,Thomas J. Fan,1
+Stefanie Senger,Virgil Chan,1
+Thomas J. Fan,Virgil Chan,1
+Adrin Jalali,Jérémie du Boisberranger,4
+Adrin Jalali,Loïc Estève,2
+Adrin Jalali,Olivier Grisel,4
+Jérémie du Boisberranger,Loïc Estève,5
+Jérémie du Boisberranger,Olivier Grisel,4
+Loïc Estève,Olivier Grisel,12
+Olivier Grisel,mekleo,1
+Santiago Castro,Virgil Chan,1
+Olivier Grisel,Stefanie Senger,3
+Adrin Jalali,Virgil Chan,2
+Olivier Grisel,Virgil Chan,1
+Jérémie du Boisberranger,antoinebaker,2
+Loïc Estève,Stefanie Senger,1
+Loïc Estève,Thomas J. Fan,3
+Chiara Marmo,Christian Lorentzen,1
+Olivier Grisel,Omar Salman,6
+Adrin Jalali,Guillaume Lemaitre,23
+Adrin Jalali,Thomas J. Fan,6
+Guillaume Lemaitre,Loïc Estève,7
+Guillaume Lemaitre,Thomas J. Fan,5
+Olivier Grisel,antoinebaker,3
+Adrin Jalali,James Budarz,1
+Adrin Jalali,Stephen Pardy,1
+Adrin Jalali,freddyaboulton,1
+James Budarz,Stephen Pardy,1
+James Budarz,Thomas J. Fan,1
+James Budarz,freddyaboulton,1
+Stephen Pardy,Thomas J. Fan,1
+Stephen Pardy,freddyaboulton,1
+Thomas J. Fan,freddyaboulton,1
+Adrin Jalali,Jiaming Yuan,1
+Guillaume Lemaitre,Jiaming Yuan,1
+Acciaro Gennaro Daniele,Adrin Jalali,1
+Acciaro Gennaro Daniele,Guillaume Lemaitre,1
+Adrin Jalali,Nithish Bolleddula,1
+Adrin Jalali,Stefanie Senger,3
+Nithish Bolleddula,Stefanie Senger,1
+Adrin Jalali,Carlo Lemos,1
+Carlo Lemos,Guillaume Lemaitre,2
+Rajath,rajath.k,1
+Guillaume Lemaitre,Yao Xiao,3
+Guillaume Lemaitre,Marie Sacksick,1
+Guillaume Lemaitre,Olivier Grisel,9
+Marie Sacksick,Olivier Grisel,1
+Adam Li,Adrin Jalali,2
+Guillaume Lemaitre,Marc Torrellas Socastro,1
+Guillaume Lemaitre,Noam Keidar,1
+Marc Torrellas Socastro,Noam Keidar,1
+Guillaume Lemaitre,Janez Demšar,1
+Arthur Courselle,Guillaume Lemaitre,1
+Guillaume Lemaitre,Guntitat Sawadwuthikul,1
+Adrin Jalali,Maxwell Liu,1
+Guillaume Lemaitre,Maxwell Liu,1
+Austin,Guillaume Lemaitre,1
+Austin,Virgil Chan,1
+Guillaume Lemaitre,Virgil Chan,1
+Adrin Jalali,Santiago M. Mola,1
+Guillaume Lemaitre,Santiago M. Mola,1
+Adrin Jalali,Zachary Vealey,1
+Guillaume Lemaitre,Zachary Vealey,1
+Guillaume Lemaitre,NoPenguinsLand,1
+Christian Lorentzen,Thomas J. Fan,1
+Adrin Jalali,Yao Xiao,3
+Adrin Jalali,Jaimin Chauhan,1
+Guillaume Lemaitre,Jaimin Chauhan,1
+Christian Lorentzen,Guillaume Lemaitre,2
+Christian Lorentzen,Olivier Grisel,3
+Adrin Jalali,Evelyn,1
+Stefanie Senger,claudio,1
+Adrin Jalali,Tialo,1
+Adrin Jalali,sean moiselle,1
+Guillaume Lemaitre,Joseph Barbier,1
+Joseph Barbier,Yao Xiao,1
+Adrin Jalali,aurelienmorgan,3
+Adrin Jalali,JorgeCardenas,1
+Adrin Jalali,Ivan Pan,2
+Adrin Jalali,datarollhexasphericon,1
+Guillaume Lemaitre,Miguel Cárdenas,1
+Guillaume Lemaitre,Xiao Yuan,2
+Miguel Cárdenas,Xiao Yuan,1
+Olivier Grisel,Thomas J. Fan,4
+Guillaume Lemaitre,John Hopfensperger,1
+Guillaume Lemaitre,Marc Bresson,1
+Guillaume Lemaitre,Shruti Nath,2
+John Hopfensperger,Marc Bresson,1
+John Hopfensperger,Olivier Grisel,2
+John Hopfensperger,Shruti Nath,4
+John Hopfensperger,Thomas J. Fan,1
+Marc Bresson,Olivier Grisel,1
+Marc Bresson,Shruti Nath,2
+Marc Bresson,Thomas J. Fan,1
+Olivier Grisel,Shruti Nath,6
+Shruti Nath,Shruti Nath,3
+Shruti Nath,Thomas J. Fan,2
+Deepak Saldanha,Guillaume Lemaitre,2
+Arif Qodari,Guillaume Lemaitre,1
+Guillaume Lemaitre,claudio,2
+Guillaume Lemaitre,K.Bharat Reddy,1
+Guillaume Lemaitre,Jérémie du Boisberranger,2
+Guillaume Lemaitre,Rachit23110261,1
+AyGeeEm,Guillaume Lemaitre,1
+Guillaume Lemaitre,a.zy.lee,1
+Adrin Jalali,Omar Salman,3
+Omar Salman,Virgil Chan,1
+Guillaume Lemaitre,Stefanie Senger,3
+Kevin Doshi,Yao Xiao,1
+Guillaume Lemaitre,Vince Carey,1
+Omar Salman,Shruti Nath,2
+Cailean Carter,Guillaume Lemaitre,1
+Guillaume Lemaitre,Piotr,1
+Guillaume Lemaitre,Omar Salman,2
+Omar Salman,Thomas J. Fan,1
+Guillaume Lemaitre,Inessa Pawson,1
+Guillaume Lemaitre,Paul Juma Otieno,1
+Inessa Pawson,Loïc Estève,1
+Inessa Pawson,Paul Juma Otieno,1
+Loïc Estève,Paul Juma Otieno,1
+Loïc Estève,Ralph Welsch,1
+Loïc Estève,rwelsch427,1
+Ralph Welsch,rwelsch427,1
+Loïc Estève,Tim Head,5
+Ilya Komarov,Tim Head,1
+Thomas J. Fan,Tim Head,2
+Adrin Jalali,Alberto Torres,1
+Stepan Srsen,Thomas J. Fan,1
+Stepan Srsen,Štěpán Sršeň,2
+Thomas J. Fan,Štěpán Sršeň,1
+Aisha,Loïc Estève,1
+Adam Li,Thomas J. Fan,1
+Adrin Jalali,dinga92,1
+Loïc Estève,bme-git,1
+Adrin Jalali,Arturo Amor,1
+Adrin Jalali,ParsifalXu,1
+Arturo Amor,ParsifalXu,1
+Arturo Amor,Thomas J. Fan,1
+ParsifalXu,Thomas J. Fan,1
+Adrin Jalali,nbrown-ScottLogic,1
+Emily (Xinyi) Chen,Olivier Grisel,2
+Guillaume Lemaitre,Tamara,1
+Jérémie du Boisberranger,Tamara,1
+Adam Li,Guillaume Lemaitre,1
+Adam Li,Omar Salman,1
+Adam Li,Loïc Estève,2
+Christian Lorentzen,Omar Salman,2
+Adrin Jalali,Marc Bresson,2
+Marc Bresson,Marc Bresson,1
+Arturo Amor,ArturoAmorQ,3
+Arturo Amor,Guillaume Lemaitre,1
+Arturo Amor,Olivier Grisel,2
+ArturoAmorQ,Guillaume Lemaitre,1
+ArturoAmorQ,Olivier Grisel,2
+Emily (Xinyi) Chen,Loïc Estève,1
+Emily (Xinyi) Chen,Omar Salman,1
+Loïc Estève,Omar Salman,4
+Emily (Xinyi) Chen,Tim Head,2
+Jérémie du Boisberranger,Thomas J. Fan,1
+Adam Li,Deepyaman Datta,1
+"Farid ""Freddie"" Taba",Loïc Estève,1
+Loïc Estève,Nithish Bolleddula,1
+Jérôme Dockès,Loïc Estève,1
+Anurag Varma,Loïc Estève,1
+Anurag Varma,Lucy Liu,1
+Loïc Estève,Lucy Liu,1
+Olivier Grisel,Tim Head,2
+Arturo Amor,Loïc Estève,2
+Adrin Jalali,Drew Craeton,1
+Loïc Estève,Reshama Shaikh,1
+Adam Li,Stefanie Senger,1
+Loïc Estève,Yao Xiao,2
+Edoardo Abati,Omar Salman,1
+Adam Li,Arturo Amor,1
+Jérémie du Boisberranger,Marco Edward Gorelli,1
+Loïc Estève,Marco Edward Gorelli,1
+Jérémie du Boisberranger,Ziad Amerr,1
+Loïc Estève,Michael R. Crusoe,1
+Loïc Estève,SGard Spreemann,1
+Loïc Estève,Sergio Pascual,1
+Michael R. Crusoe,SGard Spreemann,1
+Michael R. Crusoe,Sergio Pascual,1
+SGard Spreemann,Sergio Pascual,1
+Edoardo Abati,Tialo,1
+Loïc Estève,Tialo,1
+Omar Salman,Tialo,1
+Arturo Amor,Stefanie Senger,1
+ArturoAmorQ,Stefanie Senger,1
+Brigitta Sipőcz,Olivier Grisel,1
+Aviv Keller,Olivier Grisel,1
+Joe Cainey,Jérémie du Boisberranger,1
+Tialo,Tim Head,1
+Edoardo Abati,Olivier Grisel,1
+Omar Salman,Tim Head,1
+Adrin Jalali,Alihan Zihna,1
+Alihan Zihna,Guillaume Lemaitre,1
+Adrin Jalali,Norbert Preining,1
+Loïc Estève,Matthew Feickert,1
+Matthew Feickert,Olivier Grisel,1
+Adrin Jalali,Davide Chicco,1
+Guillaume Lemaitre,baggiponte,1
+Adrin Jalali,Priyansh Gupta,1
+Christian Veenhuis,Guillaume Lemaitre,1

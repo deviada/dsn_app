@@ -1,0 +1,326 @@
+Source,Target,Weight
+Andrei Dzis,Guillaume Lemaitre,1
+Arturo Amor,ArturoAmorQ,11
+Guillaume Lemaitre,Loïc Estève,17
+Guillaume Lemaitre,Neto,1
+Loïc Estève,Neto,1
+Guillaume Lemaitre,Weyb,1
+Guillaume Lemaitre,Salim Dohri,2
+Christian Lorentzen,Jérémie du Boisberranger,1
+Julien Jerphanion,jeremie du boisberranger,1
+Guillaume Lemaitre,Higgs32584,1
+Guillaume Lemaitre,Michael Higgins,2
+Higgs32584,Michael Higgins,1
+Arturo Amor,Guillaume Lemaitre,13
+ArturoAmorQ,Guillaume Lemaitre,6
+Guillaume Lemaitre,Jérôme Dockès,1
+Alexis IMBERT,Guillaume Lemaitre,1
+Claudio Salvatore Arcidiacono,Guillaume Lemaitre,2
+Guillaume Lemaitre,Harmanan Kohli,2
+Guillaume Lemaitre,John Cant,1
+Guillaume Lemaitre,Jérémie du Boisberranger,7
+John Cant,Jérémie du Boisberranger,1
+Guillaume Lemaitre,Xiao Yuan,2
+Guillaume Lemaitre,thebabush,1
+Christian Lorentzen,Loïc Estève,2
+Christian Lorentzen,Olivier Grisel,4
+Loïc Estève,Olivier Grisel,13
+Thomas J. Fan,Yao Xiao,1
+Stanislas Furrer,Yao Xiao,1
+Guillaume Lemaitre,Yao Xiao,13
+Guillaume Lemaitre,Raj Pulapakura,2
+Adarsh Wase,Guillaume Lemaitre,1
+DUONG,Guillaume Lemaitre,1
+Filip Karlo Došilović,Guillaume Lemaitre,3
+Advik Sinha,Guillaume Lemaitre,1
+Guillaume Lemaitre,Sandip Dutta,1
+Loïc Estève,Sandip Dutta,1
+Cindy Liang,Guillaume Lemaitre,1
+Guillaume Lemaitre,Olivier Grisel,18
+Guillaume Lemaitre,ldwy4,1
+Pierre de Fréminville,Thomas J. Fan,1
+Adrin Jalali,Guillaume Lemaitre,9
+Adrin Jalali,Mohammed Hamdy,1
+Guillaume Lemaitre,Mohammed Hamdy,1
+Connor Boyle,Guillaume Lemaitre,1
+Connor Boyle,Joel Nothman,1
+Guillaume Lemaitre,Joel Nothman,1
+Franck Charras,Olivier Grisel,1
+Joel Nothman,Mark Elliot,1
+Guillaume Lemaitre,Thomas J. Fan,11
+Adrin Jalali,Gael Varoquaux,1
+Adrin Jalali,Jérémie du Boisberranger,2
+Adrin Jalali,Thomas J. Fan,7
+Gael Varoquaux,Guillaume Lemaitre,2
+Gael Varoquaux,Jérémie du Boisberranger,1
+Gael Varoquaux,Thomas J. Fan,2
+Jérémie du Boisberranger,Thomas J. Fan,2
+Alexandre Gramfort,Guillaume Lemaitre,1
+Alexandre Gramfort,Jérémie du Boisberranger,1
+Alexandre Gramfort,Quentin Barthélemy,1
+Guillaume Lemaitre,Quentin Barthélemy,1
+Jérémie du Boisberranger,Quentin Barthélemy,1
+Guillaume Lemaitre,Omar Salman,8
+Guillaume Lemaitre,Tim Head,7
+Omar Salman,Tim Head,1
+Guillaume Lemaitre,Lorenz,1
+Christian Lorentzen,Guillaume Lemaitre,7
+Christian Lorentzen,Samuel O. Ronsin,1
+Guillaume Lemaitre,Samuel O. Ronsin,1
+Konstantinos Pitas,Loïc Estève,1
+Konstantinos Pitas,Tim Head,1
+Loïc Estève,Tim Head,4
+Christian Lorentzen,Kushan Sharma,1
+Alex,Christian Lorentzen,1
+Alex,Olivier Grisel,1
+Jérôme Dockès,Olivier Grisel,1
+Adrin Jalali,scaja,2
+scaja,scaja,1
+Adrin Jalali,Christian Lorentzen,2
+Christian Lorentzen,Thomas J. Fan,2
+Adrin Jalali,Haoying Zhang,1
+Guillaume Lemaitre,Haoying Zhang,1
+Guillaume Lemaitre,Nolan,1
+Guillaume Lemaitre,Xuefeng Xu,4
+Bharat Raghunathan,Guillaume Lemaitre,2
+Bharat Raghunathan,Julien Jerphanion,1
+Guillaume Lemaitre,Julien Jerphanion,7
+Olivier Grisel,Thomas J. Fan,8
+Daniele Ongari,Guillaume Lemaitre,1
+Daniele Ongari,Thomas J. Fan,1
+Arturo Amor,Loïc Estève,1
+Arturo Amor,Olivier Grisel,5
+ArturoAmorQ,Loïc Estève,1
+ArturoAmorQ,Olivier Grisel,2
+Dimitri Papadopoulos Orfanos,Guillaume Lemaitre,1
+Arturo Amor,Rahil Parikh,2
+Olivier Grisel,Rahil Parikh,1
+John Hopfensperger,s-banach,1
+Loïc Estève,Sebastian Berg,1
+Bharat Raghunathan,Thomas J. Fan,1
+Bharat Raghunathan,Tim Head,1
+Bharat Raghunathan,Tom Dupré la Tour,1
+Guillaume Lemaitre,Tom Dupré la Tour,1
+Thomas J. Fan,Tim Head,6
+Thomas J. Fan,Tom Dupré la Tour,1
+Tim Head,Tom Dupré la Tour,1
+Guillaume Lemaitre,Mohit Joshi,2
+Mohit Joshi,Yao Xiao,1
+Guillaume Lemaitre,Rahil Parikh,2
+Olivier Grisel,Sebastian Berg,1
+Arturo Amor,Gleb Levitski,1
+Gleb Levitski,Guillaume Lemaitre,1
+Guillaume Lemaitre,Stefanie Senger,10
+Julien Jerphanion,Stefanie Senger,1
+Abhishek Singh Kushwah,Guillaume Lemaitre,1
+Adam Li,Guillaume Lemaitre,2
+Adam Li,Thomas J. Fan,1
+Christian Lorentzen,Julien Jerphanion,1
+Julien Jerphanion,Thomas J. Fan,5
+Andrey Portnoy,Isaac Virshup,1
+Andrey Portnoy,Julien Jerphanion,1
+Andrey Portnoy,Olivier Grisel,1
+Isaac Virshup,Julien Jerphanion,1
+Isaac Virshup,Olivier Grisel,1
+Julien Jerphanion,Olivier Grisel,5
+Julien Jerphanion,Yao Xiao,1
+Adam Li,Olivier Grisel,1
+Adam Li,Omar Salman,1
+Olivier Grisel,Omar Salman,2
+Guillaume Lemaitre,Miki Watanabe,1
+Guillaume Lemaitre,Tialo,12
+Guillaume Lemaitre,Shubhal Gupta,1
+Tim Head,Xuefeng Xu,2
+Arturo Amor,Thomas J. Fan,2
+Adrin Jalali,Stefanie Senger,7
+Julien Jerphanion,Jérôme Dockès,1
+Gael Varoquaux,Ines,1
+Gael Varoquaux,Lilian,1
+Gael Varoquaux,Loïc Estève,1
+Gael Varoquaux,Olivier Grisel,1
+Gael Varoquaux,Riccardo Cappuzzo,1
+Gael Varoquaux,Tim Head,1
+Gael Varoquaux,ines.ibnukhsein,1
+Guillaume Lemaitre,Ines,1
+Guillaume Lemaitre,Lilian,1
+Guillaume Lemaitre,Riccardo Cappuzzo,1
+Guillaume Lemaitre,ines.ibnukhsein,1
+Ines,Lilian,1
+Ines,Loïc Estève,1
+Ines,Olivier Grisel,1
+Ines,Riccardo Cappuzzo,1
+Ines,Tim Head,1
+Ines,ines.ibnukhsein,1
+Lilian,Loïc Estève,1
+Lilian,Olivier Grisel,1
+Lilian,Riccardo Cappuzzo,1
+Lilian,Tim Head,1
+Lilian,ines.ibnukhsein,1
+Loïc Estève,Riccardo Cappuzzo,1
+Loïc Estève,ines.ibnukhsein,1
+Olivier Grisel,Riccardo Cappuzzo,1
+Olivier Grisel,Tim Head,4
+Olivier Grisel,ines.ibnukhsein,1
+Riccardo Cappuzzo,Tim Head,1
+Riccardo Cappuzzo,ines.ibnukhsein,1
+Tim Head,ines.ibnukhsein,1
+Edoardo Abati,Olivier Grisel,2
+Aniket Patil,Loïc Estève,1
+Guillaume Lemaitre,Meekail Zain,1
+Erwan Le Floch,Olivier Grisel,1
+Loïc Estève,Thomas J. Fan,3
+Christian Lorentzen,Stefanie Senger,1
+Adrin Jalali,Arturo Amor,3
+Adrin Jalali,Iwona Zdzieblo,1
+Guillaume Lemaitre,Iwona Zdzieblo,1
+Adrin Jalali,Kushan Sharma,2
+Naoise Holohan,jeremie du boisberranger,1
+Julien Jerphanion,Omar Salman,2
+Adrin Jalali,Olivier Grisel,3
+Olivier Grisel,Stefanie Senger,4
+Adrin Jalali,Tialo,2
+Adrin Jalali,Benoit Chevallier-Mames,1
+Guillaume Lemaitre,Raphael,1
+Guillaume Lemaitre,Sayed Qaiser Ali,1
+Guillaume Lemaitre,Vladimir Fokow,1
+Guillaume Lemaitre,jeremie du boisberranger,4
+Jérémie du Boisberranger,Loïc Estève,1
+Jérémie du Boisberranger,Olivier Grisel,3
+Jérémie du Boisberranger,Raphael,1
+Jérémie du Boisberranger,Sayed Qaiser Ali,2
+Jérémie du Boisberranger,Stefanie Senger,2
+Jérémie du Boisberranger,Tim Head,2
+Jérémie du Boisberranger,Vladimir Fokow,1
+Jérémie du Boisberranger,Xiao Yuan,1
+Jérémie du Boisberranger,Xuefeng Xu,1
+Jérémie du Boisberranger,jeremie du boisberranger,2
+Loïc Estève,Raphael,1
+Loïc Estève,Sayed Qaiser Ali,1
+Loïc Estève,Stefanie Senger,1
+Loïc Estève,Vladimir Fokow,1
+Loïc Estève,Xiao Yuan,1
+Loïc Estève,Xuefeng Xu,1
+Loïc Estève,jeremie du boisberranger,1
+Olivier Grisel,Raphael,1
+Olivier Grisel,Sayed Qaiser Ali,1
+Olivier Grisel,Vladimir Fokow,1
+Olivier Grisel,Xiao Yuan,1
+Olivier Grisel,Xuefeng Xu,1
+Olivier Grisel,jeremie du boisberranger,1
+Raphael,Sayed Qaiser Ali,1
+Raphael,Stefanie Senger,1
+Raphael,Thomas J. Fan,1
+Raphael,Tim Head,1
+Raphael,Vladimir Fokow,1
+Raphael,Xiao Yuan,1
+Raphael,Xuefeng Xu,1
+Raphael,jeremie du boisberranger,1
+Sayed Qaiser Ali,Stefanie Senger,1
+Sayed Qaiser Ali,Thomas J. Fan,1
+Sayed Qaiser Ali,Tim Head,1
+Sayed Qaiser Ali,Vladimir Fokow,1
+Sayed Qaiser Ali,Xiao Yuan,1
+Sayed Qaiser Ali,Xuefeng Xu,1
+Sayed Qaiser Ali,jeremie du boisberranger,1
+Stefanie Senger,Thomas J. Fan,1
+Stefanie Senger,Tim Head,1
+Stefanie Senger,Vladimir Fokow,1
+Stefanie Senger,Xiao Yuan,1
+Stefanie Senger,Xuefeng Xu,1
+Stefanie Senger,jeremie du boisberranger,1
+Thomas J. Fan,Vladimir Fokow,1
+Thomas J. Fan,Xiao Yuan,1
+Thomas J. Fan,Xuefeng Xu,2
+Thomas J. Fan,jeremie du boisberranger,1
+Tim Head,Vladimir Fokow,1
+Tim Head,Xiao Yuan,1
+Tim Head,jeremie du boisberranger,1
+Vladimir Fokow,Xiao Yuan,1
+Vladimir Fokow,Xuefeng Xu,1
+Vladimir Fokow,jeremie du boisberranger,2
+Xiao Yuan,Xuefeng Xu,1
+Xiao Yuan,jeremie du boisberranger,1
+Xuefeng Xu,jeremie du boisberranger,1
+Adrin Jalali,MN193,1
+101AlexMartin,Alejandro Martin,1
+101AlexMartin,Guillaume Lemaitre,1
+101AlexMartin,Jérémie du Boisberranger,1
+101AlexMartin,jeremie du boisberranger,1
+Alejandro Martin,Guillaume Lemaitre,1
+Alejandro Martin,Jérémie du Boisberranger,1
+Alejandro Martin,jeremie du boisberranger,1
+Omar Salman,Yao Xiao,2
+Omar Salman,Tialo,2
+Christian Clauss,Guillaume Lemaitre,1
+Ben Holmes,Guillaume Lemaitre,1
+Ben Holmes,Omar Salman,1
+Guillaume Lemaitre,Lohit SundaramahaLingam,1
+Lohit SundaramahaLingam,Omar Salman,1
+Alexander Al-Feghali,Guillaume Lemaitre,1
+Arturo Amor,Julien Jerphanion,1
+Arturo Amor,Tim Head,1
+ArturoAmorQ,Julien Jerphanion,1
+ArturoAmorQ,Tim Head,1
+Julien Jerphanion,Tim Head,2
+Mohit Joshi,Omar Salman,1
+Brendan Lu,Guillaume Lemaitre,1
+Elisabeth Günther,Guillaume Lemaitre,1
+Guillaume Lemaitre,Tamara,1
+Lucy Liu,Olivier Grisel,2
+Julien Jerphanion,Loïc Estève,1
+Loïc Estève,Mateusz Sokół,1
+Jérémie du Boisberranger,Rahil Parikh,1
+Naman Dhingra,Omar Salman,1
+Arturo Amor,Stefanie Senger,1
+Adrin Jalali,David Brochart,1
+Arturo Amor,mrastgoo,1
+Guillaume Lemaitre,mrastgoo,1
+AnnaWey,Tamara,2
+Adrin Jalali,Omar Salman,5
+avm19,avm19,1
+Adrin Jalali,Isaac Virshup,1
+Artem Kislovskiy,Olivier Grisel,1
+Artem Kislovskiy,Julien Jerphanion,1
+Adrin Jalali,Tanjina Afroj,1
+Julien Jerphanion,Meekail Zain,3
+Guillaume Lemaitre,cynthias13w,1
+Ricardo Peres,Thomas J. Fan,1
+ArturoAmorQ,Thomas J. Fan,1
+Shreesha Kumar Bhat,shreesha3112,2
+Ben Mares,Loïc Estève,1
+Jon Nordby,Meekail Zain,1
+Meekail Zain,Thomas J. Fan,1
+Meekail Zain,Shreesha Kumar Bhat,2
+Meekail Zain,shreesha3112,1
+Omar Salman,Thomas J. Fan,1
+Fabian Egli,Thomas J. Fan,1
+Adrin Jalali,Marek Hanuš,1
+Adrin Jalali,Luis Silvestrin,1
+Thomas J. Fan,Thomas Roehr,1
+Jérémie du Boisberranger,Meekail Zain,1
+Jérémie du Boisberranger,Shreesha Kumar Bhat,1
+Arturo Amor,Dimitri Papadopoulos Orfanos,1
+Florian Idelberger,Thomas J. Fan,1
+Mateusz Sokół,Olivier Grisel,1
+Mateusz Sokół,Thomas J. Fan,1
+Mateusz Sokół,Tim Head,1
+Julien Jerphanion,Jérémie du Boisberranger,1
+Guillaume Lemaitre,Jiawei Zhang,4
+Jiawei Zhang,Thomas J. Fan,1
+Guillaume Lemaitre,jeremiedbb,1
+Stefanie Senger,jeremiedbb,1
+Christian Veenhuis,Meekail Zain,1
+Julien Jerphanion,Pat O'Reilly,1
+Julien Jerphanion,Samuel O. Ronsin,1
+Julien Jerphanion,dsleo,1
+Olivier Grisel,Pat O'Reilly,1
+Olivier Grisel,Samuel O. Ronsin,1
+Olivier Grisel,dsleo,1
+Pat O'Reilly,Samuel O. Ronsin,1
+Pat O'Reilly,Thomas J. Fan,1
+Pat O'Reilly,dsleo,1
+Samuel O. Ronsin,Thomas J. Fan,1
+Samuel O. Ronsin,dsleo,1
+Thomas J. Fan,dsleo,1
+Jiawei Zhang,jeremie du boisberranger,3
+Yuchen Zhou,jeremie du boisberranger,1
