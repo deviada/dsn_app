@@ -100,6 +100,9 @@ def process_all_graphs(all_data: Dict[str, pd.DataFrame]) -> Dict[str, nx.Graph]
             create_using=nx.Graph()
         )
 
+        # Remove self-loop edges
+        G.remove_edges_from(nx.selfloop_edges(G))
+
         # # 2. LCC Filter Logic
         # if lcc_only:
         #     # Get all connected components sorted by size
