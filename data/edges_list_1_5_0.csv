@@ -1,5 +1,5 @@
 Source,Target,Weight
-Jérémie du Boisberranger,Olivier Grisel,7
+Jérémie du Boisberranger,Olivier Grisel,8
 Adrin Jalali,Guillaume Lemaitre,16
 Adrin Jalali,Thomas J. Fan,7
 Adrin Jalali,Yao Xiao,1
@@ -9,7 +9,7 @@ Thomas J. Fan,Yao Xiao,3
 Christian Lorentzen,Guillaume Lemaitre,7
 Christian Lorentzen,Jérémie du Boisberranger,4
 Christian Lorentzen,Tim Head,4
-Guillaume Lemaitre,Jérémie du Boisberranger,8
+Guillaume Lemaitre,Jérémie du Boisberranger,13
 Guillaume Lemaitre,Tim Head,5
 Jérémie du Boisberranger,Tim Head,1
 Johann,jpienaar-tuks,1
@@ -29,7 +29,7 @@ Tuhin Sharma,bivav,1
 Adrin Jalali,Andreas Mueller,1
 Adrin Jalali,Christian Lorentzen,2
 Adrin Jalali,Joel Nothman,2
-Adrin Jalali,Jérémie du Boisberranger,2
+Adrin Jalali,Jérémie du Boisberranger,4
 Adrin Jalali,Soledad Galli,1
 Andreas Mueller,Arturo Amor,1
 Andreas Mueller,Christian Lorentzen,1
@@ -70,7 +70,7 @@ Omar Salman,Soledad Galli,1
 Omar Salman,Thomas J. Fan,2
 Soledad Galli,Thomas J. Fan,1
 Olivier Grisel,Xiao Yuan,1
-Lucy Liu,jeremiedbb,1
+Jérémie du Boisberranger,Lucy Liu,1
 Adrin Jalali,Gael Varoquaux,1
 Gael Varoquaux,Jérémie du Boisberranger,1
 Guillaume Lemaitre,Stefanie Senger,5
@@ -102,15 +102,13 @@ Oleksii Kachaiev,Olivier Grisel,2
 Oleksii Kachaiev,Tim Head,2
 Olivier Grisel,Tim Head,8
 Guillaume Lemaitre,Jérôme Dockès,1
-Guillaume Lemaitre,jeremiedbb,4
-Jérôme Dockès,jeremiedbb,1
+Jérémie du Boisberranger,Jérôme Dockès,1
 Gyeongjae Choi,Olivier Grisel,1
 Adrin Jalali,Rahil Parikh,1
 Arturo Amor,Rahil Parikh,1
 Adrin Jalali,Randolf Scholz,1
-Adrin Jalali,jeremiedbb,2
-Randolf Scholz,jeremiedbb,1
-jeremiedbb,myenugula,1
+Jérémie du Boisberranger,Randolf Scholz,1
+Jérémie du Boisberranger,myenugula,1
 Duarte São José,Jérémie du Boisberranger,1
 Adrin Jalali,Kaushik Amar Das,1
 Guillaume Lemaitre,Kaushik Amar Das,1
@@ -123,22 +121,20 @@ Marija Vlajic,Olivier Grisel,1
 Marija Vlajic,Tim Head,1
 Adam Li,Guillaume Lemaitre,4
 Guillaume Lemaitre,Patrick Wang,1
-Guillaume Lemaitre,jeremie du boisberranger,1
-Patrick Wang,jeremie du boisberranger,1
+Jérémie du Boisberranger,Patrick Wang,1
 Arturo Amor,ArturoAmorQ,4
 ArturoAmorQ,Christian Lorentzen,2
 ArturoAmorQ,Olivier Grisel,2
 Loïc Estève,miguelcsilva,1
 Jérémie du Boisberranger,Xuefeng Xu,1
 Jérémie du Boisberranger,miguelcsilva,1
-Loïc Estève,jeremie du boisberranger,1
-Olivier Grisel,jeremie du boisberranger,1
+Jérémie du Boisberranger,Loïc Estève,4
 Jérémie du Boisberranger,Naziya Mahimkar,1
 Olivier Grisel,miguelcsilva,1
 Adrin Jalali,Julian Libiseller-Egger,2
 Guillaume Lemaitre,Julian Libiseller-Egger,2
 Julian Libiseller-Egger,Julian Libiseller-Egger,1
-Julian Libiseller-Egger,jeremiedbb,2
+Julian Libiseller-Egger,Jérémie du Boisberranger,2
 Adrin Jalali,Ralf Gommers,1
 Adrin Jalali,Tim Head,1
 Olivier Grisel,Ralf Gommers,1
@@ -148,12 +144,11 @@ Adam Li,Thomas J. Fan,2
 Adam Li,Yao Xiao,1
 Guillaume Lemaitre,lihaitao,1
 Guillaume Lemaitre,Krsto Proroković,2
+Jérémie du Boisberranger,Krsto Proroković,2
 Krsto Proroković,Krsto Proroković,1
-Krsto Proroković,jeremiedbb,2
 Reshama Shaikh,Ricardo,1
 Guillaume Lemaitre,Ralph Urlus,1
-Ralph Urlus,jeremiedbb,1
-Jérémie du Boisberranger,Loïc Estève,3
+Jérémie du Boisberranger,Ralph Urlus,1
 Jack Bowyer,Loïc Estève,1
 ArturoAmorQ,Tim Head,1
 Guillaume Lemaitre,Vineet Joshi,1
@@ -167,11 +162,11 @@ Guillaume Lemaitre,Michael Higgins,17
 Dipan Banik,Guillaume Lemaitre,1
 Guillaume Lemaitre,Thanh Lam DANG,3
 Arturo Amor,Xavier Beltran,1
-Yao Xiao,jeremie du boisberranger,1
-crispinlogan,jeremie du boisberranger,2
+Jérémie du Boisberranger,Yao Xiao,1
+Jérémie du Boisberranger,crispinlogan,2
+Jérémie du Boisberranger,SarahRemus,1
+Jérémie du Boisberranger,ge72mum,1
 SarahRemus,ge72mum,1
-SarahRemus,jeremie du boisberranger,1
-ge72mum,jeremie du boisberranger,1
 Arturo Amor,Gael Varoquaux,2
 ArturoAmorQ,Gael Varoquaux,1
 Filip Karlo Došilović,Loïc Estève,1
