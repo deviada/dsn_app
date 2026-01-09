@@ -24,6 +24,11 @@ st.set_page_config(
 def clear_all_session_state():
     st.session_state.clear()
 
+def reset_data_state():
+    new_mode = st.session_state.data_mode_selection
+    st.session_state.clear()
+    st.session_state.data_mode_selection = new_mode
+
 def process_uploaded_files(uploaded_files):
     """
     Processes the files uploaded by the user, validating names and column structures.
@@ -612,42 +617,52 @@ def main():
 
     # SIDEBAR
     # Sidebar for Data Selection Mode
-    st.sidebar.header("Data Configuration")
     data_mode = st.sidebar.radio(
         "Select Data Source:",
         options=["Use Example Data", "Upload Your Own Data"],
         index=0,
+        key="data_mode_selection",
+        on_change=reset_data_state,
         help="Choose whether to use the pre-loaded data in the 'data/' folder or upload new CSV files."
     )
 
     all_dataframes = {}
 
     if data_mode == "Upload Your Own Data":
-        uploaded_files = st.sidebar.file_uploader(
-            "Upload Edge List Files (CSV)", 
-            type="csv", 
-            accept_multiple_files=True
-        )
-        if uploaded_files:
-            all_dataframes = process_uploaded_files(uploaded_files)
-            if all_dataframes:
-                st.sidebar.success(f"Successfully loaded {len(all_dataframes)} file(s).")
-                # Trigger re-calculation if data changes
-                if st.sidebar.button("Process Uploaded Data"):
-                    st.session_state.clear()
-                    st.rerun()
+        with st.sidebar.form("upload_form"):
+            uploaded_files = st.file_uploader(
+                "Upload Edge List Files (CSV)", 
+                type="csv", 
+                accept_multiple_files=True
+            )
+            
+            submit_button = st.form_submit_button("Process Data")
+            
+            if submit_button:
+                if uploaded_files:
+                    processed = process_uploaded_files(uploaded_files)
+                    if processed:
+                        st.session_state['all_dataframes_uploaded'] = processed
+                        if 'all_graphs' in st.session_state:
+                            del st.session_state['all_graphs']
+                        st.success(f"Loaded {len(processed)} file(s).")
+                else:
+                    st.error("Please upload at least one CSV file.")
+
+        if 'all_dataframes_uploaded' in st.session_state:
+            all_dataframes = st.session_state['all_dataframes_uploaded']
         else:
-            st.info("Please upload CSV files to proceed with custom analysis.")
+            st.info("Upload CSV files and click 'Process' to begin.")
             st.stop()
             
     else:
-        # Use Example Data from Local Directory
+        # Mode: Use Example Data
         all_dataframes = load_all_network_data(DATA_DIR)
         if not all_dataframes:
-            st.error("Example data not found in 'data/' directory.")
+            st.error("Example data not found.")
             st.stop()
-        st.sidebar.info(f"Currently using {len(all_dataframes)} example snapshots.")
-
+        st.sidebar.info(f"Using {len(all_dataframes)} example snapshots.")
+ 
     # 2. Process Graphs and core_score Analysis
     # We use session state to ensure heavy calculations only run once per data set.
     if 'all_graphs' not in st.session_state:
