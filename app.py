@@ -6,9 +6,13 @@ import cpnet
 import altair as alt
 from streamlit_agraph import agraph, Node, Edge, Config
 from typing import Dict
+import json
+from pathlib import Path
 
 # CONSTANT
 DATA_DIR = "data"
+CACHE_DIR = "cache_example"
+Path(CACHE_DIR).mkdir(parents=True, exist_ok=True)
 
 # PAGE CONFIGURATION
 st.set_page_config(
@@ -82,16 +86,52 @@ def load_all_network_data(data_dir: str) -> Dict[str, pd.DataFrame]:
                 
     return all_data
 
-@st.cache_data(show_spinner="Building Graphs and Calculating Rombach core_score...")
-def process_all_graphs(all_data: Dict[str, pd.DataFrame]) -> Dict[str, nx.Graph]:
+def get_algorithm_results(G: nx.Graph, version: str, is_example: bool) -> Dict[str, float]:
     """
-    Builds NetworkX Graphs, calculates Rombach core_score, and stores the core_score 
-    as a node attribute for ALL snapshots. Caching is based entirely on the input DataFrames.
+    Handles the Rombach coreness calculation logic.
+    If example data, it checks for saved results first.
+    """
+    cache_file = os.path.join(CACHE_DIR, f"scores_{version}.json")
+
+    # Path A: Use saved results for Example Data
+    if is_example and os.path.exists(cache_file):
+        with open(cache_file, 'r') as f:
+            cached_data = json.load(f)
+            return cached_data.get('scores', {})
+
+    # Path B: Run Algorithm (for Uploaded Data or first-time Example setup)
+    try:
+        # Standard configuration for Rombach
+        alg = cpnet.Rombach(alpha=0, beta=0.8, num_runs=10)
+        alg.detect(G)
+        core_score_dict = alg.get_coreness()
+
+        # Save results if it's Example Data for future use
+        if is_example:
+            with open(cache_file, 'w') as f:
+                json.dump({'scores': core_score_dict}, f)
+        
+        return core_score_dict
+    except Exception as e:
+        st.error(f"Error executing Rombach algorithm for {version}: {e}")
+        return {}
+
+@st.cache_data(show_spinner="Processing network data...")
+def process_all_graphs(all_data: Dict[str, pd.DataFrame], data_mode: str) -> Dict[str, nx.Graph]:
+    """
+    Builds graphs and integrates coreness scores based on the selected data source.
     """
     all_graphs = {}
-    
+    is_example = (data_mode == "Use Example Data")
+
+    if not is_example:
+        st.warning("⚠️ Custom data detected. Running core-periphery detection may take some time.")
+        st.info("""
+            **Note on Stochastic Results:** The Rombach algorithm is stochastic. If you re-upload or re-process the same data, the core scores may vary slightly between runs.
+        """)
+
     for version, df_edges in all_data.items():
-        # 1. Build the full graph using nx.Graph for undirected co-authorship network
+        # Build the Graph
         G = nx.from_pandas_edgelist(
             df_edges, 
             source='Source', 
@@ -99,61 +139,21 @@ def process_all_graphs(all_data: Dict[str, pd.DataFrame]) -> Dict[str, nx.Graph]
             edge_attr='Weight', 
             create_using=nx.Graph()
         )
-
-        # Remove self-loop edges
         G.remove_edges_from(nx.selfloop_edges(G))
 
-        # # 2. LCC Filter Logic
-        # if lcc_only:
-        #     # Get all connected components sorted by size
-        #     components = list(nx.connected_components(G_full))
-        #     num_components = len(components)
-            
-        #     if num_components > 1:
-        #         # Select the largest component
-        #         lcc_nodes = max(components, key=len)
-        #         G = G_full.subgraph(lcc_nodes).copy()
-                
-        #         # Calculate how many nodes were removed
-        #         removed_nodes = G_full.number_of_nodes() - G.number_of_nodes()
-        #         st.sidebar.info(f"[{version.replace('_', '.')}] LCC Active: Found {num_components} components. Removed {removed_nodes} nodes from {num_components - 1} smaller clusters.")
-        #     else:
-        #         G = G_full
-        # else:
-        #     G = G_full
-        
         if G.number_of_nodes() < 2:
             all_graphs[version] = G
             continue
+
+        # Get results from cache or calculation
+        core_scores = get_algorithm_results(G, version, is_example)
         
-        # 3. Calculate Rombach core_score 
-        try:
-            alg = cpnet.Rombach(alpha=0, beta=0.8, num_runs=10)
-            alg.detect(G)
-            core_score_dict = alg.get_coreness()
-            pair_id = alg.get_pair_id()
-            # st.write(pair_id)
-
-            # sig_c, sig_x, significant, p_values = cpnet.qstest(
-            #     pair_id, core_score_dict, G, alg, significance_level=0.05, num_of_thread=1
-            # )
-            # st.write(sig_c)
-            # st.write(sig_x)
-            # st.write(significant)
-            # st.write(p_values)
-            
-            # 3. Set core_score as Node Attribute
-            nx.set_node_attributes(G, core_score_dict, 'rombach_core_score') 
-            nx.set_node_attributes(G, pair_id, 'pair_id') 
-            
-        except Exception as e:
-            st.warning(f"Failed to calculate core_score for {version}: {e}")
-
-            
+        # Map scores back to the graph nodes
+        nx.set_node_attributes(G, core_scores, 'rombach_core_score')
+        
         all_graphs[version] = G
         
-    st.success(f"Successfully processed {len(all_graphs)} NetworkX graphs.")
-    return all_graphs, alg
+    return all_graphs
 
 
 def render_network_size_section(df_overview: pd.DataFrame):
@@ -203,131 +203,6 @@ def render_network_size_section(df_overview: pd.DataFrame):
     chart = (lines + points).interactive() 
     
     st.altair_chart(chart, use_container_width=True)
-
-def render_network_visualization(all_graphs: Dict[str, nx.Graph], sorted_versions: list):
-    """
-    Renders two side-by-side interactive network graphs:
-    1. Original network with core_score-based styling.
-    2. Simulated network after removing the top developer.
-    """
-    st.subheader("Core–Periphery Network Visualization")
-
-    # Version selection
-    version_options = [v.replace('_', '.') for v in sorted_versions]
-    selected_ver_str = st.selectbox("Select Version to Visualize:", version_options, index=len(version_options)-1, key="viz_ver_select")
-    
-    # Map back to original key
-    selected_key = selected_ver_str.replace('.', '_')
-    G_orig = all_graphs[selected_key].copy()
-    
-    if G_orig.number_of_nodes() == 0:
-        st.warning("The selected graph has no nodes.")
-        return
-
-    # Identify top developer for removal
-    core_score_attr = nx.get_node_attributes(G_orig, 'rombach_core_score')
-    top_dev = max(core_score_attr, key=core_score_attr.get) if core_score_attr else None
-    
-    G_sim = G_orig.copy()
-    if top_dev:
-        G_sim.remove_node(top_dev)
-
-    col1, col2 = st.columns(2)
-
-    def build_agraph_elements(G):
-        nodes = []
-        edges = []
-        
-        # --- 1. PRE-CALCULATION
-        # Get all core score and weight
-        all_core_score = [d.get('rombach_core_score', 0) for _, d in G.nodes(data=True)]
-        all_weights = [d.get('Weight', 1) for _, _, d in G.edges(data=True)]
-
-        # Min/Max core_score
-        if all_core_score:
-            min_c, max_c = min(all_core_score), max(all_core_score)
-        else:
-            min_c, max_c = 0, 1
-
-        # Min/Max Weight
-        if all_weights:
-            min_w, max_w = min(all_weights), max(all_weights)
-        else:
-            min_w, max_w = 1, 1
-
-        # --- 2. NODE LOGIC ---
-        for node, attrs in G.nodes(data=True):
-            core_score = attrs.get('rombach_core_score', 0)
-            
-            min_node_size = 10
-            max_node_size = 40
-            
-            if max_c > min_c:
-                node_size = min_node_size + (core_score - min_c) * (max_node_size - min_node_size) / (max_c - min_c)
-            else:
-                node_size = min_node_size
-                
-            color = f"rgba(31, 119, 180, {0.3 + (core_score * 0.7)})"
-
-            hover_info = f"Developer: {node}\nCore Score: {core_score:.4f}"
-
-            nodes.append(Node(id=node, label=node, size=node_size, color=color, title=hover_info))
-            
-        # --- 3. EDGE LOGIC ---
-        for source, target, attrs in G.edges(data=True):
-            weight = attrs.get('Weight', 1)
-            
-            min_edge_w = 3
-            max_edge_w = 12
-            
-            if max_w > min_w:
-                edge_width = min_edge_w + (weight - min_w) * (max_edge_w - min_edge_w) / (max_w - min_w)
-            else:
-                edge_width = min_edge_w
-                
-            edges.append(Edge(
-                source=source, 
-                target=target, 
-                color="#D3D3D3", 
-                width=edge_width
-            ))
-            
-        return nodes, edges
-
-    # Configuration for ForceAtlas2
-    config = Config(
-        width=600,
-        height=500,
-        directed=False,
-        physics=True,
-        hierarchical=False,
-        stabilization={
-            "enabled": True,
-            "iterations": 1000,
-            "fit": True,
-        },
-        saveLayout=True,
-        graphviz_layout="neato", # Alternative base
-        forceAtlas2Based={
-            "gravitationalConstant": -50,
-            "centralGravity": 0.01,
-            "springLength": 100,
-            "springConstant": 0.08,
-            "avoidOverlap": 1
-        }
-    )
-
-    with col1:
-        st.markdown(f"**Original Collaboration Network (Version {selected_ver_str})**")
-        nodes_orig, edges_orig = build_agraph_elements(G_orig)
-        agraph(nodes=nodes_orig, edges=edges_orig, config=config)
-        st.caption("Node size and opacity represent continuous Rombach core scores.")
-
-    with col2:
-        st.markdown(f"**Network after Core Node Removal (Without {top_dev})**")
-        nodes_sim, edges_sim = build_agraph_elements(G_sim)
-        agraph(nodes=nodes_sim, edges=edges_sim, config=config)
-        st.caption(f"Structure after simulated removal of the highest core-score developer.")
 
 def render_top_developers_comparison(df_core_score_full: pd.DataFrame, sorted_versions: list):
     """
@@ -503,10 +378,9 @@ def render_core_score_trajectory(df_core_score_full: pd.DataFrame, sorted_versio
     Note: Breaks in the line indicate that the developer did not contribute to that specific version.
     """)
 
-
 def render_risk_analysis_section(all_graphs: Dict[str, nx.Graph], sorted_versions: list):
     """
-    Simulates the removal of the top developer (highest core score) for each version
+    Simulates the removal of the top 5% developers (highest core score) for each version
     to examine structural dependency in the collaboration network.
     """
 
@@ -521,37 +395,41 @@ def render_risk_analysis_section(all_graphs: Dict[str, nx.Graph], sorted_version
             continue
 
         # 2. Get Initial State (Baseline)
-        # Look at the largest connected component before removal
         initial_components = sorted(nx.connected_components(G_original), key=len, reverse=True)
         initial_lcc_size = len(initial_components[0])
 
-        # 3. Identify and Remove Top Developer
-        # Use the 'rombach_core_score' attribute
+        # 3. Identify and Remove Top 5% Developers
         core_score_data = nx.get_node_attributes(G_original, 'rombach_core_score')
         if not core_score_data:
             continue
             
-        top_developer = max(core_score_data, key=core_score_data.get)
+        # Sort developers by core score descending
+        sorted_devs = sorted(core_score_data.items(), key=lambda x: x[1], reverse=True)
+        
+        # Calculate 5% of nodes (minimum 1 node)
+        num_to_remove = max(1, int(0.05 * total_nodes))
+        top_devs_to_remove = [dev for dev, score in sorted_devs[:num_to_remove]]
+
         G_simulated = G_original.copy()
-        G_simulated.remove_node(top_developer)
+        G_simulated.remove_nodes_from(top_devs_to_remove)
 
         # 4. Calculate Impact
-        # New LCC size after removal
         new_components = sorted(nx.connected_components(G_simulated), key=len, reverse=True)
         new_lcc_size = len(new_components[0]) if new_components else 0
         
         # Connectivity Loss: % reduction in LCC size
-        # Formula: (Initial LCC - New LCC) / Initial LCC
         connectivity_loss = ((initial_lcc_size - new_lcc_size) / initial_lcc_size) * 100
         
         # Fragmented nodes -> difference in nodes no longer in the main component
-        fragmented_nodes = initial_lcc_size - new_lcc_size - 1 # -1 is the removed node
+        # Corrected: subtract the number of nodes actually removed
+        fragmented_nodes = initial_lcc_size - new_lcc_size - len(top_devs_to_remove)
 
         risk_metrics.append({
             'Version': version.replace('_', '.'),
-            'Top_Developer': top_developer,
+            'Top_Developers_Sample': ", ".join(top_devs_to_remove[:5]) + ("..." if len(top_devs_to_remove) > 5 else ""),
+            'Nodes_Removed': num_to_remove,
             'Connectivity_Loss': round(connectivity_loss, 2),
-            'Fragmented_Nodes': fragmented_nodes
+            'Fragmented_Nodes': max(0, fragmented_nodes)
         })
 
     df_risk = pd.DataFrame(risk_metrics)
@@ -567,14 +445,15 @@ def render_risk_analysis_section(all_graphs: Dict[str, nx.Graph], sorted_version
     ver_data = df_risk[df_risk['Version'] == selected_ver].iloc[0]
     
     col1, col2, col3 = st.columns([2, 1, 1])
-    col1.metric("Top Developer Removed", ver_data['Top_Developer'])
+    col1.metric("Nodes Removed (Top 5%)", f"{int(ver_data['Nodes_Removed'])} Devs")
     col2.metric("Connectivity Loss", f"{ver_data['Connectivity_Loss']}%")
     col3.metric("Nodes Fragmented", int(ver_data['Fragmented_Nodes']))
+    st.caption(f"Removed: {ver_data['Top_Developers_Sample']}")
 
     # --- VISUAL 2: Temporal Risk Trend ---
     st.subheader("Structural Dependency across Release Versions")
     
-    risk_color = '#d97706' # Dark Amber 
+    risk_color = '#d97706' # Dark Amber
     
     line_chart = alt.Chart(df_risk).mark_line(
         point=alt.OverlayMarkDef(color=risk_color, filled=True), 
@@ -582,14 +461,142 @@ def render_risk_analysis_section(all_graphs: Dict[str, nx.Graph], sorted_version
     ).encode(
         x=alt.X('Version:N', sort=None, title="Version", axis=alt.Axis(labelAngle=0)),
         y=alt.Y('Connectivity_Loss:Q', title="Connectivity Loss (%)", scale=alt.Scale(domain=[0, 100])),
-        tooltip=['Version', 'Top_Developer', 'Connectivity_Loss']
+        tooltip=['Version', 'Nodes_Removed', 'Connectivity_Loss', 'Top_Developers_Sample']
     ).properties(
         height=400,
-        title="Connectivity Loss after Core Developer Removal"
+        title="Connectivity Loss after Top 5% Core Developers Removal"
     ).interactive()
 
     st.altair_chart(line_chart, use_container_width=True)
-    st.caption("The line shows the percentage reduction in the largest connected component after the removal of the highest core-score developer.")
+    st.caption("The line shows the percentage reduction in the largest connected component after the removal of the top 5% highest core-score developers.")
+
+def render_network_visualization(all_graphs: Dict[str, nx.Graph], sorted_versions: list):
+    """
+    Renders two side-by-side interactive network graphs:
+    1. Original network with core_score-based styling.
+    2. Simulated network after removing the top 5% developers.
+    """
+    st.subheader("Core–Periphery Network Visualization")
+
+    # Version selection
+    version_options = [v.replace('_', '.') for v in sorted_versions]
+    selected_ver_str = st.selectbox("Select Version to Visualize:", version_options, index=len(version_options)-1, key="viz_ver_select")
+    
+    # Map back to original key
+    selected_key = selected_ver_str.replace('.', '_')
+    G_orig = all_graphs[selected_key].copy()
+    
+    if G_orig.number_of_nodes() == 0:
+        st.warning("The selected graph has no nodes.")
+        return
+
+    # --- Identify top 5% developers for removal ---
+    core_score_attr = nx.get_node_attributes(G_orig, 'rombach_core_score')
+    
+    # Sort nodes by core score descending
+    sorted_nodes = sorted(core_score_attr.items(), key=lambda x: x[1], reverse=True)
+    
+    # Calculate how many nodes constitute 5% (at least 1 node)
+    num_nodes = G_orig.number_of_nodes()
+    num_to_remove = max(1, int(0.05 * num_nodes))
+    top_devs_to_remove = [node for node, score in sorted_nodes[:num_to_remove]]
+    
+    G_sim = G_orig.copy()
+    if top_devs_to_remove:
+        G_sim.remove_nodes_from(top_devs_to_remove)
+
+    col1, col2 = st.columns(2)
+
+    def build_agraph_elements(G):
+        nodes = []
+        edges = []
+        
+        # --- 1. PRE-CALCULATION
+        all_core_score = [d.get('rombach_core_score', 0) for _, d in G.nodes(data=True)]
+        all_weights = [d.get('Weight', 1) for _, _, d in G.edges(data=True)]
+
+        if all_core_score:
+            min_c, max_c = min(all_core_score), max(all_core_score)
+        else:
+            min_c, max_c = 0, 1
+
+        if all_weights:
+            min_w, max_w = min(all_weights), max(all_weights)
+        else:
+            min_w, max_w = 1, 1
+
+        # --- 2. NODE LOGIC ---
+        for node, attrs in G.nodes(data=True):
+            core_score = attrs.get('rombach_core_score', 0)
+            
+            min_node_size = 10
+            max_node_size = 40
+            
+            if max_c > min_c:
+                node_size = min_node_size + (core_score - min_c) * (max_node_size - min_node_size) / (max_c - min_c)
+            else:
+                node_size = min_node_size
+                
+            color = f"rgba(31, 119, 180, {0.3 + (core_score * 0.7)})"
+            hover_info = f"Developer: {node}\nCore Score: {core_score:.4f}"
+
+            nodes.append(Node(id=node, label=node, size=node_size, color=color, title=hover_info))
+            
+        # --- 3. EDGE LOGIC ---
+        for source, target, attrs in G.edges(data=True):
+            weight = attrs.get('Weight', 1)
+            
+            min_edge_w = 3
+            max_edge_w = 12
+            
+            if max_w > min_w:
+                edge_width = min_edge_w + (weight - min_w) * (max_edge_w - min_edge_w) / (max_w - min_w)
+            else:
+                edge_width = min_edge_w
+                
+            edges.append(Edge(
+                source=source, 
+                target=target, 
+                color="#D3D3D3", 
+                width=edge_width
+            ))
+            
+        return nodes, edges
+
+    # Configuration
+    config = Config(
+        width=600,
+        height=500,
+        directed=False,
+        physics=True,
+        hierarchical=False,
+        stabilization={
+            "enabled": True,
+            "iterations": 1000,
+            "fit": True,
+        },
+        saveLayout=True,
+        graphviz_layout="neato", 
+        forceAtlas2Based={
+            "gravitationalConstant": -50,
+            "centralGravity": 0.01,
+            "springLength": 100,
+            "springConstant": 0.08,
+            "avoidOverlap": 1
+        }
+    )
+
+    with col1:
+        st.markdown(f"**Original Collaboration Network (Version {selected_ver_str})**")
+        nodes_orig, edges_orig = build_agraph_elements(G_orig)
+        agraph(nodes=nodes_orig, edges=edges_orig, config=config)
+        st.caption("Node size and opacity represent continuous Rombach core scores.")
+
+    with col2:
+        st.markdown(f"**Network after Core Nodes Removal (Top 5%)**")
+        nodes_sim, edges_sim = build_agraph_elements(G_sim)
+        agraph(nodes=nodes_sim, edges=edges_sim, config=config)
+        st.caption(f"Structure after simulated removal of the {num_to_remove} highest core-score developers.")
 
 
 
@@ -644,11 +651,9 @@ def main():
     # 2. Process Graphs and core_score Analysis
     # We use session state to ensure heavy calculations only run once per data set.
     if 'all_graphs' not in st.session_state:
-         with st.spinner("Calculating Rombach core_score across all versions..."):
-             st.session_state['all_graphs'], st.session_state['alg'] = process_all_graphs(all_dataframes)
+        st.session_state['all_graphs'] = process_all_graphs(all_dataframes, data_mode)
          
     all_graphs = st.session_state['all_graphs']
-    alg = st.session_state['alg']
 
     # sorted_version -> List : ["1_0","1_1_0"]
     sorted_versions = sorted(all_graphs.keys(), key=lambda x: [int(c) if c.isdigit() else c for c in x.split('_')])
